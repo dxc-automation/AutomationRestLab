@@ -18,11 +18,10 @@ public class Environments extends BasicTestConfig {
 
     //***** HOSTS
     public static       String HOST;
-    public final static String VWD_SERVICE_HOST = "charting.vwdservices.com";
 
 
     //***** DOMAINS
-    public final static String CREATE_NEW_DOMAIN = "/domains";
+    public final static String BOOTSTRAP = "/v1/apps/bootstrap";
 
 
     //***** EMAIL ADDRESS

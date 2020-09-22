@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Demo_Test_Suite">
-              <span class="suite-name border-failed">Demo Test Suite</span>
+              <span class="suite-name border-passed">Demo Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Demo_Test_Suite">
-                    <span>E:\Frameworks\AutomationRestLab\src\main\resources\xml_files\TestCase_01_CreateNewDomain.xml</span>
+                    <span>E:\Frameworks\AutomationRestLab\src\main\resources\xml_files\TestCase_01_UserRegistration.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,21 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method, 1 failed,   </span>
+                    <span class="method-stats">1 method,   1 passed</span>
                   </li>
                   <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Demo_Test_Suite" class="hide-methods failed suite-Demo_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-Demo_Test_Suite -->
-                      <a href="#" panel-name="suite-Demo_Test_Suite" class="show-methods failed suite-Demo_Test_Suite"> (show)</a> <!-- show-methods failed suite-Demo_Test_Suite -->
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Demo_Test_Suite" class="hide-methods passed suite-Demo_Test_Suite"> (hide)</a> <!-- hide-methods passed suite-Demo_Test_Suite -->
+                      <a href="#" panel-name="suite-Demo_Test_Suite" class="show-methods passed suite-Demo_Test_Suite"> (show)</a> <!-- show-methods passed suite-Demo_Test_Suite -->
                     </span>
-                    <div class="method-list-content failed suite-Demo_Test_Suite">
+                    <div class="method-list-content passed suite-Demo_Test_Suite">
                       <span>
-                        <img width="3%" src="failed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Demo_Test_Suite" title="com.demo.tests.TestCase_01_CreateNewDomain" hash-for-method="post_new_email(public void com.demo.tests.TestCase_01_CreateNewDomain.post_new_email(java.lang.reflect.Method) thro...)">post_new_email(public void com.demo.tests.TestCase_01_CreateNewDomain.post_new_email(java.lang.reflect.Method) thro...)</a> <!-- method navigator-link -->
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Demo_Test_Suite" title="com.demo.tests.TestCase_01_UserRegistration" hash-for-method="api_bootstrap(public void com.demo.tests.TestCase_01_UserRegistration.api_bootstrap(java.lang.reflect.Method) thro...)">api_bootstrap(public void com.demo.tests.TestCase_01_UserRegistration.api_bootstrap(java.lang.reflect.Method) thro...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content failed suite-Demo_Test_Suite -->
+                    </div> <!-- method-list-content passed suite-Demo_Test_Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -117,64 +117,28 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Demo_Test_Suite" class="panel Demo_Test_Suite">
-          <div class="suite-Demo_Test_Suite-class-failed">
+          <div class="suite-Demo_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.demo.tests.TestCase_01_CreateNewDomain</span>
+              <img src="passed.png"/>
+              <span class="class-name">com.demo.tests.TestCase_01_UserRegistration</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="post_new_email(public void com.demo.tests.TestCase_01_CreateNewDomain.post_new_email(java.lang.reflect.Method) thro...)">
-                  </a> <!-- post_new_email(public void com.demo.tests.TestCase_01_CreateNewDomain.post_new_email(java.lang.reflect.Method) thro...) -->
-                  <span class="method-name">post_new_email</span>
-                  <span class="parameters">(public void com.demo.tests.TestCase_01_CreateNewDomain.post_new_email(java.lang.reflect.Method) throws java.lang.Exception)</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:97)
-	at org.testng.Assert.failNotEquals(Assert.java:969)
-	at org.testng.Assert.assertTrue(Assert.java:43)
-	at org.testng.Assert.assertTrue(Assert.java:53)
-	at com.demo.scripts.api.domain.CreateNewDomain.create_new_domain(CreateNewDomain.java:100)
-	at com.demo.tests.TestCase_01_CreateNewDomain.post_new_email(TestCase_01_CreateNewDomain.java:23)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
-	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-	at java.util.ArrayList.forEach(Unknown Source)
-	at org.testng.TestRunner.privateRun(TestRunner.java:766)
-	at org.testng.TestRunner.run(TestRunner.java:587)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:286)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
-	at org.testng.TestNG.runSuites(TestNG.java:1039)
-	at org.testng.TestNG.run(TestNG.java:1007)
-	at org.testng.TestNG.privateMain(TestNG.java:1336)
-	at org.testng.TestNG.main(TestNG.java:1304)
-
-</div> <!-- stack-trace -->
+                  <a name="api_bootstrap(public void com.demo.tests.TestCase_01_UserRegistration.api_bootstrap(java.lang.reflect.Method) thro...)">
+                  </a> <!-- api_bootstrap(public void com.demo.tests.TestCase_01_UserRegistration.api_bootstrap(java.lang.reflect.Method) thro...) -->
+                  <span class="method-name">api_bootstrap</span>
+                  <span class="parameters">(public void com.demo.tests.TestCase_01_UserRegistration.api_bootstrap(java.lang.reflect.Method) throws java.lang.Exception)</span>
                   <em>
 (API)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Demo_Test_Suite-class-failed -->
+          </div> <!-- suite-Demo_Test_Suite-class-passed -->
         </div> <!-- panel Demo_Test_Suite -->
         <div panel-name="test-xml-Demo_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">E:\Frameworks\AutomationRestLab\src\main\resources\xml_files\TestCase_01_CreateNewDomain.xml</span>
+            <span class="header-content">E:\Frameworks\AutomationRestLab\src\main\resources\xml_files\TestCase_01_UserRegistration.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -185,14 +149,14 @@
     &lt;listener class-name=&quot;com.demo.config.TestNGListener&quot;/&gt;
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; verbose=&quot;10&quot; name=&quot;TC_01_Domain&quot;&gt;
-    &lt;parameter name=&quot;environment&quot; value=&quot;test&quot;/&gt;
+    &lt;parameter name=&quot;environment&quot; value=&quot;fly&quot;/&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.demo.tests.TestCase_01_CreateNewDomain&quot;&gt;
+      &lt;class name=&quot;com.demo.tests.TestCase_01_UserRegistration&quot;&gt;
         &lt;methods&gt;
-          &lt;include name=&quot;post_new_email&quot;/&gt;
+          &lt;include name=&quot;api_bootstrap&quot;/&gt;
         &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- com.demo.tests.TestCase_01_CreateNewDomain --&gt;
+      &lt;/class&gt; &lt;!-- com.demo.tests.TestCase_01_UserRegistration --&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- TC_01_Domain --&gt;
 &lt;/suite&gt; &lt;!-- Demo Test Suite --&gt;
@@ -234,9 +198,9 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'post_new_email')
-data.setCell(0, 2, 'com.demo.tests.TestCase_01_CreateNewDomain')
-data.setCell(0, 3, 1659);
+data.setCell(0, 1, 'api_bootstrap')
+data.setCell(0, 2, 'com.demo.tests.TestCase_01_UserRegistration')
+data.setCell(0, 3, 1211);
 window.suiteTableData['Demo_Test_Suite']= { tableData: data, tableDiv: 'times-div-Demo_Test_Suite'}
 return data;
 }
@@ -267,36 +231,34 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.demo.tests.TestCase_01_CreateNewDomain</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.demo.tests.TestCase_01_UserRegistration</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">cleanReportData</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">browserConfig(chrome)</span>
-                <span class="method-start">14 ms</span>
+                <span class="method-start">69 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
-                <span class="method-name">setEnvironmentHostUserPass(test)</span>
-                <span class="method-start">3498 ms</span>
+                <span class="method-name">setEnvironmentHostUserPass(fly)</span>
+                <span class="method-start">3623 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">post_new_email(public void com.demo.tests.TestCase_01_CreateNewDomain.post_new_email(java.lang.reflect.Method) thro...)</span>
-                <span class="method-start">3527 ms</span>
+                <span class="method-name">api_bootstrap(public void com.demo.tests.TestCase_01_UserRegistration.api_bootstrap(java.lang.reflect.Method) thro...)</span>
+                <span class="method-start">3654 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">generateReport(org.testng.TestRunner@3ee0b4f7, [TestResult name=post_new_email status=FAILURE method=TestCase_01_Cr...)</span>
-                <span class="method-start">5188 ms</span>
+                <span class="method-name">generateReport(org.testng.TestRunner@18d910b3, [TestResult name=api_bootstrap status=SUCCESS method=TestCase_01_Use...)</span>
+                <span class="method-start">4868 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-class after">
                 <span class="method-name">flushReportData</span>
-                <span class="method-start">5195 ms</span>
+                <span class="method-start">4870 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">5812 ms</span>
+                <span class="method-start">5504 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

@@ -27,13 +27,12 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.text.SimpleDateFormat;
-import java.util.Date;
 
 import static com.demo.config.ExtentReport.test;
 import static com.demo.properties.FilePaths.*;
 import static com.demo.properties.TestData.*;
-import static org.apache.commons.io.FileUtils.cleanDirectory;
+import static com.demo.utilities.FileUtility.getFormattedJson;
+import static org.apache.commons.io.FileUtils.*;
 
 
 
@@ -73,18 +72,7 @@ public class BasicTestConfig {
     }
 
 
-    private static String getScreenShot(WebDriver driver) throws IOException {
-        String dateName = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
-        TakesScreenshot ts = (TakesScreenshot) driver;
-        File source = ts.getScreenshotAs(OutputType.FILE);
-        String destination = screenshots_failed_folder + dateName + ".png";
-        File finalDestination = new File(destination);
-        FileUtils.copyFile(source, finalDestination);
-        return destination;
-    }
-
-
-
+    //***   Used for generate report
     @AfterMethod(alwaysRun = true)
     public void generateReport(ITestContext context, ITestResult result) throws Exception {
         String fileName   = context.getName() + ".json";
@@ -108,11 +96,11 @@ public class BasicTestConfig {
                             //   + "Response Message : " + responseMsg
                             + "<br/>"
                             + "<br/>"
-                            //     + responseHeaders
+                            + responseHeaders
                             + "<br/>"
                             + "<br/>"
                             + "<br/>"
-                            + responseBody
+                            + getFormattedJson(responseBody)
                             + "<br/>"
                             + "<br/>"
                             + "</pre>");
@@ -134,10 +122,10 @@ public class BasicTestConfig {
                             + "<br />"
                             + "Response Code  : " + responseCode
                             + "<br />"
-                            + "Error Message  : " + responseBody
+                            + "Error Message  : " + getFormattedJson(responseBody)
                             + "<br />"
                             + "<br />"
-                            //      + responseHeaders
+                            + responseHeaders
                             + "<br />"
                             + "<br />"
                             + "<br />"
@@ -162,6 +150,7 @@ public class BasicTestConfig {
     }
 
 
+    //*** Get browser value from XML file and initialize driver
     @BeforeClass
     @Parameters("browser")
     public static void browserConfig(String browser) throws Exception {
@@ -252,6 +241,8 @@ public class BasicTestConfig {
         }
     }
 
+
+    //***   Used for closing web driver
     @AfterClass
     public static void flushReportData() {
         driver.close();

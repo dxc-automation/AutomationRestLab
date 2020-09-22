@@ -83,6 +83,7 @@ public class ExtentReport {
         extent.setAnalysisStrategy(AnalysisStrategy.TEST);
     }
 
+
     public static void generateRequestReport(String scheme, String host, String path, String jsonPostData) {
         //***   Print request details
         test.info("<pre>"

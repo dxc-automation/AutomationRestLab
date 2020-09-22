@@ -1,12 +1,12 @@
 package com.demo.properties;
 
-import com.jayway.restassured.RestAssured;
 import com.jayway.restassured.builder.RequestSpecBuilder;
+import com.jayway.restassured.response.Header;
 import com.jayway.restassured.response.Response;
 import com.jayway.restassured.specification.ResponseSpecification;
-import org.apache.http.client.utils.URIBuilder;
 
 import java.net.URI;
+import java.util.List;
 
 public class TestData {
 
@@ -25,8 +25,9 @@ public class TestData {
 
 
     //  * * * *    RESPONSE
-    public static Response response;
-    public static int   responseCode;
+    public static List<Header> responseHeaders;
+    public static Response     response;
+    public static int          responseCode;
 
     public static URI url;
     public static String env;
