@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Sep 21 16:30:29 EEST 2020</td>
+<td>Started on:</td><td>Mon Sep 21 23:44:16 EEST 2020</td>
 </tr>
-<tr><td>Total time:</td><td>4 seconds (4711 ms)</td>
+<tr><td>Total time:</td><td>6 seconds (6002 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,30 +76,13 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.demo.tests.TestCase_01_CreateNewDomain.post_new_email()'><b>post_new_email</b><br>Test class: com.demo.tests.TestCase_01_CreateNewDomain<br>Test method: API<br>Parameters: public void com.demo.tests.TestCase_01_CreateNewDomain.post_new_email(java.lang.reflect.Method) throws java.lang.Exception</td>
-<td><div><pre>java.lang.IllegalArgumentException: Specification to merge with cannot be null
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:80)
-	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:74)
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
-	at com.jayway.restassured.internal.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
-	at com.jayway.restassured.internal.assertion.AssertParameter$notNull.callStatic(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:56)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:194)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:214)
-	at com.jayway.restassured.internal.SpecificationMerger.merge(SpecificationMerger.groovy:92)
-	at com.jayway.restassured.internal.SpecificationMerger$merge.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:133)
-	at com.jayway.restassured.internal.RequestSpecificationImpl.spec(RequestSpecificationImpl.groovy:877)
-	at com.demo.scripts.api.domain.CreateNewDomain.create_new_domain(CreateNewDomain.java:82)
-	at com.demo.tests.TestCase_01_CreateNewDomain.post_new_email(TestCase_01_CreateNewDomain.java:24)
+<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at org.testng.Assert.assertTrue(Assert.java:53)
+	at com.demo.scripts.api.domain.CreateNewDomain.create_new_domain(CreateNewDomain.java:100)
+	at com.demo.tests.TestCase_01_CreateNewDomain.post_new_email(TestCase_01_CreateNewDomain.java:23)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -127,31 +110,14 @@ function toggleAllBoxes() {
 	at org.testng.TestNG.run(TestNG.java:1007)
 	at org.testng.TestNG.privateMain(TestNG.java:1336)
 	at org.testng.TestNG.main(TestNG.java:1304)
-</pre></div><a href='#' onClick='toggleBox("stack-trace763677574", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace763677574'><pre>java.lang.IllegalArgumentException: Specification to merge with cannot be null
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:80)
-	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:74)
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
-	at com.jayway.restassured.internal.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
-	at com.jayway.restassured.internal.assertion.AssertParameter$notNull.callStatic(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:56)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:194)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:214)
-	at com.jayway.restassured.internal.SpecificationMerger.merge(SpecificationMerger.groovy:92)
-	at com.jayway.restassured.internal.SpecificationMerger$merge.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:133)
-	at com.jayway.restassured.internal.RequestSpecificationImpl.spec(RequestSpecificationImpl.groovy:877)
-	at com.demo.scripts.api.domain.CreateNewDomain.create_new_domain(CreateNewDomain.java:82)
-	at com.demo.tests.TestCase_01_CreateNewDomain.post_new_email(TestCase_01_CreateNewDomain.java:24)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1687586610", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1687586610'><pre>java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at org.testng.Assert.assertTrue(Assert.java:53)
+	at com.demo.scripts.api.domain.CreateNewDomain.create_new_domain(CreateNewDomain.java:100)
+	at com.demo.tests.TestCase_01_CreateNewDomain.post_new_email(TestCase_01_CreateNewDomain.java:23)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -180,8 +146,8 @@ function toggleAllBoxes() {
 	at org.testng.TestNG.privateMain(TestNG.java:1336)
 	at org.testng.TestNG.main(TestNG.java:1304)
 </pre></div></td>
-<td>0</td>
-<td>com.demo.tests.TestCase_01_CreateNewDomain@359f7cdf</td></tr>
+<td>1</td>
+<td>com.demo.tests.TestCase_01_CreateNewDomain@28b46423</td></tr>
 </table><p>
 </body>
 </html>

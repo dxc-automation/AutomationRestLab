@@ -11,10 +11,10 @@
       <class name="com.demo.tests.TestCase_01_CreateNewDomain">
         <methods>
           <include name="browserConfig"/>
+          <include name="setEnvironmentHostUserPass"/>
           <include name="cleanReportData"/>
           <include name="tearDown"/>
           <include name="flushReportData"/>
-          <include name="setEnvironmentHostUserPass"/>
           <include name="post_new_email" invocation-numbers="0"/>
           <include name="generateReport"/>
         </methods>

@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Demo_Test_Suite">
-                    <span>D:\Frameworks\NatekAutomation\src\main\resources\xml_files\TestCase_01_CreateNewDomain.xml</span>
+                    <span>E:\Frameworks\AutomationRestLab\src\main\resources\xml_files\TestCase_01_CreateNewDomain.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -129,30 +129,13 @@
                   </a> <!-- post_new_email(public void com.demo.tests.TestCase_01_CreateNewDomain.post_new_email(java.lang.reflect.Method) thro...) -->
                   <span class="method-name">post_new_email</span>
                   <span class="parameters">(public void com.demo.tests.TestCase_01_CreateNewDomain.post_new_email(java.lang.reflect.Method) throws java.lang.Exception)</span>
-                  <div class="stack-trace">java.lang.IllegalArgumentException: Specification to merge with cannot be null
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-	at java.lang.reflect.Constructor.newInstance(Unknown Source)
-	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:80)
-	at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:74)
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
-	at com.jayway.restassured.internal.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
-	at com.jayway.restassured.internal.assertion.AssertParameter$notNull.callStatic(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:56)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:194)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:214)
-	at com.jayway.restassured.internal.SpecificationMerger.merge(SpecificationMerger.groovy:92)
-	at com.jayway.restassured.internal.SpecificationMerger$merge.call(Unknown Source)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:133)
-	at com.jayway.restassured.internal.RequestSpecificationImpl.spec(RequestSpecificationImpl.groovy:877)
-	at com.demo.scripts.api.domain.CreateNewDomain.create_new_domain(CreateNewDomain.java:82)
-	at com.demo.tests.TestCase_01_CreateNewDomain.post_new_email(TestCase_01_CreateNewDomain.java:24)
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:97)
+	at org.testng.Assert.failNotEquals(Assert.java:969)
+	at org.testng.Assert.assertTrue(Assert.java:43)
+	at org.testng.Assert.assertTrue(Assert.java:53)
+	at com.demo.scripts.api.domain.CreateNewDomain.create_new_domain(CreateNewDomain.java:100)
+	at com.demo.tests.TestCase_01_CreateNewDomain.post_new_email(TestCase_01_CreateNewDomain.java:23)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -191,7 +174,7 @@
         </div> <!-- panel Demo_Test_Suite -->
         <div panel-name="test-xml-Demo_Test_Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">D:\Frameworks\NatekAutomation\src\main\resources\xml_files\TestCase_01_CreateNewDomain.xml</span>
+            <span class="header-content">E:\Frameworks\AutomationRestLab\src\main\resources\xml_files\TestCase_01_CreateNewDomain.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -253,12 +236,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'post_new_email')
 data.setCell(0, 2, 'com.demo.tests.TestCase_01_CreateNewDomain')
-data.setCell(0, 3, 549);
+data.setCell(0, 3, 1659);
 window.suiteTableData['Demo_Test_Suite']= { tableData: data, tableDiv: 'times-div-Demo_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 549 ms</span>
+              <span class="suite-total-time">Total running time: 1 seconds</span>
               <div id="times-div-Demo_Test_Suite">
               </div> <!-- times-div-Demo_Test_Suite -->
             </div> <!-- times-div -->
@@ -291,30 +274,30 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">browserConfig(chrome)</span>
-                <span class="method-start">29 ms</span>
+                <span class="method-start">14 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
                 <span class="method-name">setEnvironmentHostUserPass(test)</span>
-                <span class="method-start">3714 ms</span>
+                <span class="method-start">3498 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">post_new_email(public void com.demo.tests.TestCase_01_CreateNewDomain.post_new_email(java.lang.reflect.Method) thro...)</span>
-                <span class="method-start">3781 ms</span>
+                <span class="method-start">3527 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
-                <span class="method-name">generateReport(org.testng.TestRunner@2d2acd89, [TestResult name=post_new_email status=FAILURE method=TestCase_01_Cr...)</span>
-                <span class="method-start">4342 ms</span>
+                <span class="method-name">generateReport(org.testng.TestRunner@3ee0b4f7, [TestResult name=post_new_email status=FAILURE method=TestCase_01_Cr...)</span>
+                <span class="method-start">5188 ms</span>
               </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">flushReportData</span>
+                <span class="method-start">5195 ms</span>
+              </div> <!-- configuration-class after -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">4356 ms</span>
+                <span class="method-start">5812 ms</span>
               </div> <!-- configuration-test after -->
-              <div class="configuration-suite after">
-                <span class="method-name">flushReportData</span>
-                <span class="method-start">4882 ms</span>
-              </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

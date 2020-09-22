@@ -1,7 +1,6 @@
 package com.demo.config;
 
 import com.aventstack.extentreports.MediaEntityBuilder;
-import com.demo.utilities.web_services.RestAssured;
 import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -31,14 +30,10 @@ import java.nio.file.Paths;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-import static com.demo.config.ExtentReport.*;
-import static com.demo.properties.Environments.HOST;
+import static com.demo.config.ExtentReport.test;
 import static com.demo.properties.FilePaths.*;
 import static com.demo.properties.TestData.*;
-import static com.demo.utilities.FileUtility.getFormattedJson;
-import static com.demo.utilities.FileUtility.readJsonResponseFile;
 import static org.apache.commons.io.FileUtils.cleanDirectory;
-import static com.demo.utilities.web_services.RestAssured.*;
 
 
 
@@ -148,10 +143,9 @@ public class BasicTestConfig {
                             + "<br />"
                             + "<center><b>********  E X C E P T I O N  ********</b></center>"
                             + "<br />"
-                            //      + throwable
+                            + throwable
                             + "<br />"
                             + "<br />"
-                            + responseBody
                             + "<br />"
                             + "</pre>");
 
@@ -167,29 +161,6 @@ public class BasicTestConfig {
         }
     }
 
-
-    @BeforeClass
-    @Parameters("environment")
-    public static void setEnvironmentHostUserPass(String environment) {
-        env = environment;
-        if (environment.equalsIgnoreCase("internal")) {
-            HOST = "internal.degiro.eu";
-            USER = "dgtraderie";
-            PASS = "Test_web2020";
-        } else if (environment.equalsIgnoreCase("webtrader")) {
-            HOST = "test-webtrader.internal.degiro.eu";
-            USER = "web2879nl";
-            PASS = "Test600";
-        } else if (environment.equalsIgnoreCase("weekly")) {
-            HOST = "test-weekly-webtrader.internal.degiro.eu";
-            USER = "dgtraderie";
-            PASS = "Test_web2020";
-        } else if (environment.equalsIgnoreCase("test")) {
-            HOST = "api.mailslurp.com";
-            USER = "sandboxqa11@gmail.com";
-            MAIL = "automation";
-        }
-    }
 
     @BeforeClass
     @Parameters("browser")
@@ -259,13 +230,13 @@ public class BasicTestConfig {
         File reportVideos     = new File(video_files);
 
         try {
-            if (!reportJsonDir.exists() && reportFailedDir.exists()) {
+            if (!reportJsonDir.exists() && !reportFailedDir.exists()) {
                 reportJsonDir.mkdir();
                 reportFailedDir.mkdir();
             } else {
                 cleanDirectory(new File(report_json_folder));
                 cleanDirectory(new File(screenshots_failed_folder));
-            } if (!reportActual.exists() && reportBuffer.exists()) {
+            } if (!reportActual.exists() && !reportBuffer.exists()) {
                 reportFailedDir.mkdir();
                 reportActual.mkdir();
             } else {
@@ -281,7 +252,7 @@ public class BasicTestConfig {
         }
     }
 
-    @AfterSuite
+    @AfterClass
     public static void flushReportData() {
         driver.close();
         driver.quit();

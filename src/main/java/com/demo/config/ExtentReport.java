@@ -6,12 +6,14 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
-import static com.demo.properties.Environments.HOST;
-import static com.demo.properties.FilePaths.*;
-import static com.demo.properties.TestData.*;
-
 import java.net.InetAddress;
 import java.net.UnknownHostException;
+
+import static com.demo.properties.FilePaths.report_config_xml_file;
+import static com.demo.properties.FilePaths.report_html_file;
+import static com.demo.properties.TestData.env;
+import static com.demo.properties.TestData.url;
+import static com.demo.utilities.FileUtility.getFormattedJson;
 
 
 /**
@@ -61,12 +63,13 @@ public class ExtentReport {
     private static ExtentHtmlReporter getHtmlReporter() {
         htmlReporter = new ExtentHtmlReporter(report_html_file);
         htmlReporter.loadXMLConfig(report_config_xml_file);
-        htmlReporter.config().setTheme(Theme.STANDARD);
+        htmlReporter.config().setTheme(Theme.DARK);
         htmlReporter.config().setEncoding("UTF-8");
         return htmlReporter;
     }
 
 
+    //***   Method that start report listener
     public static void startTestReport(String testName, String testDescription) throws Exception {
         extent = GetExtent();
         test   = extent.createTest(
@@ -78,5 +81,23 @@ public class ExtentReport {
                         + "</p>"
                         + "</pre>");
         extent.setAnalysisStrategy(AnalysisStrategy.TEST);
+    }
+
+    public static void generateRequestReport(String scheme, String host, String path, String jsonPostData) {
+        //***   Print request details
+        test.info("<pre>"
+                + "<br/>"
+                + "<center><b>* * * * * * * *    R E Q U E S T    * * * * * * * *</b></center>"
+                + "<br />"
+                + "<br />"
+                + "Host:     " + scheme + "://" + host
+                + "<br />"
+                + "Path:     " + path + "/" + url.getQuery()
+                + "<br/>"
+                + "<br/>"
+                + getFormattedJson(jsonPostData)
+                + "<br/>"
+                + "<br/>"
+                + "</pre>");
     }
 }

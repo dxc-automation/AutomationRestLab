@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Demo Test Suite" duration-ms="4711" started-at="2020-09-21T16:30:29 EEST" finished-at="2020-09-21T16:30:34 EEST">
+  <suite name="Demo Test Suite" duration-ms="6002" started-at="2020-09-21T23:44:16 EEST" finished-at="2020-09-21T23:44:22 EEST">
     <groups>
     </groups>
-    <test name="TC_01_Domain" duration-ms="4711" started-at="2020-09-21T16:30:29 EEST" finished-at="2020-09-21T16:30:34 EEST">
+    <test name="TC_01_Domain" duration-ms="6002" started-at="2020-09-21T23:44:16 EEST" finished-at="2020-09-21T23:44:22 EEST">
       <class name="com.demo.tests.TestCase_01_CreateNewDomain">
-        <test-method status="PASS" signature="cleanReportData()[pri:0, instance:com.demo.tests.TestCase_01_CreateNewDomain@359f7cdf]" name="cleanReportData" is-config="true" duration-ms="19" started-at="2020-09-21T16:30:29 EEST" finished-at="2020-09-21T16:30:29 EEST">
+        <test-method status="PASS" signature="cleanReportData()[pri:0, instance:com.demo.tests.TestCase_01_CreateNewDomain@28b46423]" name="cleanReportData" is-config="true" duration-ms="8" started-at="2020-09-21T23:44:16 EEST" finished-at="2020-09-21T23:44:16 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanReportData -->
-        <test-method status="PASS" signature="browserConfig(java.lang.String)[pri:0, instance:com.demo.tests.TestCase_01_CreateNewDomain@359f7cdf]" name="browserConfig" is-config="true" duration-ms="3685" started-at="2020-09-21T16:30:29 EEST" finished-at="2020-09-21T16:30:33 EEST">
+        <test-method status="PASS" signature="browserConfig(java.lang.String)[pri:0, instance:com.demo.tests.TestCase_01_CreateNewDomain@28b46423]" name="browserConfig" is-config="true" duration-ms="3484" started-at="2020-09-21T23:44:16 EEST" finished-at="2020-09-21T23:44:19 EEST">
           <params>
             <param index="0">
               <value>
@@ -22,7 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserConfig -->
-        <test-method status="PASS" signature="setEnvironmentHostUserPass(java.lang.String)[pri:0, instance:com.demo.tests.TestCase_01_CreateNewDomain@359f7cdf]" name="setEnvironmentHostUserPass" is-config="true" duration-ms="60" started-at="2020-09-21T16:30:33 EEST" finished-at="2020-09-21T16:30:33 EEST">
+        <test-method status="PASS" signature="setEnvironmentHostUserPass(java.lang.String)[pri:0, instance:com.demo.tests.TestCase_01_CreateNewDomain@28b46423]" name="setEnvironmentHostUserPass" is-config="true" duration-ms="26" started-at="2020-09-21T23:44:19 EEST" finished-at="2020-09-21T23:44:20 EEST">
           <params>
             <param index="0">
               <value>
@@ -33,7 +33,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setEnvironmentHostUserPass -->
-        <test-method status="FAIL" signature="post_new_email(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_01_CreateNewDomain@359f7cdf]" name="post_new_email" duration-ms="549" started-at="2020-09-21T16:30:33 EEST" description="API" finished-at="2020-09-21T16:30:33 EEST">
+        <test-method status="FAIL" signature="post_new_email(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_01_CreateNewDomain@28b46423]" name="post_new_email" duration-ms="1659" started-at="2020-09-21T23:44:20 EEST" description="API" finished-at="2020-09-21T23:44:21 EEST">
           <params>
             <param index="0">
               <value>
@@ -41,35 +41,18 @@
               </value>
             </param>
           </params>
-          <exception class="java.lang.IllegalArgumentException">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Specification to merge with cannot be null]]>
+              <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.IllegalArgumentException: Specification to merge with cannot be null
-at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
-at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
-at java.lang.reflect.Constructor.newInstance(Unknown Source)
-at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:80)
-at org.codehaus.groovy.reflection.CachedConstructor.doConstructorInvoke(CachedConstructor.java:74)
-at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
-at com.jayway.restassured.internal.assertion.AssertParameter.notNull(AssertParameter.groovy:26)
-at com.jayway.restassured.internal.assertion.AssertParameter$notNull.callStatic(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:56)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:194)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:214)
-at com.jayway.restassured.internal.SpecificationMerger.merge(SpecificationMerger.groovy:92)
-at com.jayway.restassured.internal.SpecificationMerger$merge.call(Unknown Source)
-at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:48)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:113)
-at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:133)
-at com.jayway.restassured.internal.RequestSpecificationImpl.spec(RequestSpecificationImpl.groovy:877)
-at com.demo.scripts.api.domain.CreateNewDomain.create_new_domain(CreateNewDomain.java:82)
-at com.demo.tests.TestCase_01_CreateNewDomain.post_new_email(TestCase_01_CreateNewDomain.java:24)
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertTrue(Assert.java:43)
+at org.testng.Assert.assertTrue(Assert.java:53)
+at com.demo.scripts.api.domain.CreateNewDomain.create_new_domain(CreateNewDomain.java:100)
+at com.demo.tests.TestCase_01_CreateNewDomain.post_new_email(TestCase_01_CreateNewDomain.java:23)
 at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
 at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
@@ -99,34 +82,34 @@ at org.testng.TestNG.privateMain(TestNG.java:1336)
 at org.testng.TestNG.main(TestNG.java:1304)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.IllegalArgumentException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- post_new_email -->
-        <test-method status="PASS" signature="generateReport(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_01_CreateNewDomain@359f7cdf]" name="generateReport" is-config="true" duration-ms="10" started-at="2020-09-21T16:30:33 EEST" finished-at="2020-09-21T16:30:33 EEST">
+        <test-method status="PASS" signature="generateReport(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_01_CreateNewDomain@28b46423]" name="generateReport" is-config="true" duration-ms="6" started-at="2020-09-21T23:44:21 EEST" finished-at="2020-09-21T23:44:21 EEST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@2d2acd89]]>
+                <![CDATA[org.testng.TestRunner@3ee0b4f7]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[TestResult name=post_new_email status=FAILURE method=TestCase_01_CreateNewDomain.post_new_email(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_01_CreateNewDomain@359f7cdf] output={null}]]]>
+                <![CDATA[[TestResult name=post_new_email status=FAILURE method=TestCase_01_CreateNewDomain.post_new_email(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_01_CreateNewDomain@28b46423] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.demo.tests.TestCase_01_CreateNewDomain@359f7cdf]" name="tearDown" is-config="true" duration-ms="375" started-at="2020-09-21T16:30:33 EEST" finished-at="2020-09-21T16:30:34 EEST">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-        <test-method status="PASS" signature="flushReportData()[pri:0, instance:com.demo.tests.TestCase_01_CreateNewDomain@359f7cdf]" name="flushReportData" is-config="true" duration-ms="1001" started-at="2020-09-21T16:30:34 EEST" finished-at="2020-09-21T16:30:35 EEST">
+        <test-method status="PASS" signature="flushReportData()[pri:0, instance:com.demo.tests.TestCase_01_CreateNewDomain@28b46423]" name="flushReportData" is-config="true" duration-ms="614" started-at="2020-09-21T23:44:21 EEST" finished-at="2020-09-21T23:44:22 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReportData -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.demo.tests.TestCase_01_CreateNewDomain@28b46423]" name="tearDown" is-config="true" duration-ms="199" started-at="2020-09-21T23:44:22 EEST" finished-at="2020-09-21T23:44:22 EEST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- com.demo.tests.TestCase_01_CreateNewDomain -->
     </test> <!-- TC_01_Domain -->
   </suite> <!-- Demo Test Suite -->

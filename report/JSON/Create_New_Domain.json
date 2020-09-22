@@ -1,0 +1,3 @@
+{
+  "message": "Validation error in field `domain`. Reason: `must match \"^\\w+(\\.\\w+)+$\"`"
+}

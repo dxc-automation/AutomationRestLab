@@ -1,29 +1,22 @@
 package com.demo.scripts.api.domain;
 
-import com.aventstack.extentreports.Status;
 import com.demo.config.BasicTestConfig;
-import com.jayway.restassured.RestAssured;
-import com.jayway.restassured.filter.log.LogDetail;
+import com.jayway.restassured.builder.RequestSpecBuilder;
+import com.jayway.restassured.http.ContentType;
 import com.jayway.restassured.specification.RequestSpecification;
 import org.apache.http.client.utils.URIBuilder;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.json.simple.JSONObject;
 import org.testng.Assert;
-import org.testng.annotations.*;
+import org.testng.annotations.Listeners;
 
-import java.net.URI;
-import java.net.URISyntaxException;
-
-import static com.demo.config.ExtentReport.test;
-import static com.demo.config.ExtentReport.startTestReport;
+import static com.demo.config.ExtentReport.*;
 import static com.demo.properties.Environments.CREATE_NEW_DOMAIN;
 import static com.demo.properties.Environments.HOST;
 import static com.demo.properties.TestData.*;
 import static com.demo.utilities.FileUtility.createLogFile;
-import static com.demo.utilities.web_services.RestAssured.requestSpecification;
 import static com.jayway.restassured.RestAssured.given;
-import static jdk.nashorn.internal.objects.NativeMath.log;
 
 @Listeners(com.demo.config.TestNGListener.class)
 public class CreateNewDomain extends BasicTestConfig {
@@ -54,7 +47,6 @@ public class CreateNewDomain extends BasicTestConfig {
                 .setScheme(scheme)
                 .setHost(host)
                 .setPath(path)
-                .addParameter("x-api-key", API_KEY)
                 .build();
 
         //***   Request Body
@@ -62,21 +54,16 @@ public class CreateNewDomain extends BasicTestConfig {
         jsonPostData.put("domain", domain_name);
 
 
-        //***   Print request details
-        test.info("<pre>"
-                + "<br/>"
-                + "<center><b>* * * * * * * *    R E Q U E S T    * * * * * * * *</b></center>"
-                + "<br />"
-                + "<br />"
-                + "Host:     " + scheme + "://" + host
-                + "<br />"
-                + "Path:     " + path + "/" + url.getQuery()
-                + "<br/>"
-                + "<br/>"
-                + jsonPostData
-                + "<br/>"
-                + "<br/>"
-                + "</pre>");
+        RequestSpecBuilder builder = new RequestSpecBuilder();
+        builder.setBaseUri(url);
+        builder.setBody(jsonPostData.toJSONString());
+        builder.addHeader("x-api-key", API_KEY);
+        builder.setContentType(ContentType.JSON);
+        RequestSpecification requestSpecification = builder.build();
+
+        //***   Call print report method from ExtentReport.class
+        generateRequestReport(scheme, host, path, jsonPostData.toJSONString());
+
 
         response = given()
                 .spec(requestSpecification)
