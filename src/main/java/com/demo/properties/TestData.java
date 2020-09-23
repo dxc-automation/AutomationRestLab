@@ -29,6 +29,8 @@ public class TestData {
     public static Response     response;
     public static int          responseCode;
 
+    public static String accessToken;
+
     public static URI url;
     public static String env;
     public static String responseBody;

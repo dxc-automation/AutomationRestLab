@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Demo Test Suite" duration-ms="5641" started-at="2020-09-22T20:43:59 EEST" finished-at="2020-09-22T20:44:05 EEST">
+  <suite name="Demo Test Suite" duration-ms="6495" started-at="2020-09-23T11:19:27 EEST" finished-at="2020-09-23T11:19:33 EEST">
     <groups>
     </groups>
-    <test name="TC_01_Domain" duration-ms="5641" started-at="2020-09-22T20:43:59 EEST" finished-at="2020-09-22T20:44:05 EEST">
+    <test name="TC_01_Domain" duration-ms="6495" started-at="2020-09-23T11:19:27 EEST" finished-at="2020-09-23T11:19:33 EEST">
       <class name="com.demo.tests.TestCase_01_UserRegistration">
-        <test-method status="PASS" signature="cleanReportData()[pri:0, instance:com.demo.tests.TestCase_01_UserRegistration@28b46423]" name="cleanReportData" is-config="true" duration-ms="48" started-at="2020-09-22T20:43:59 EEST" finished-at="2020-09-22T20:43:59 EEST">
+        <test-method status="PASS" signature="cleanReportData()[pri:0, instance:com.demo.tests.TestCase_01_UserRegistration@28b46423]" name="cleanReportData" is-config="true" duration-ms="8" started-at="2020-09-23T11:19:27 EEST" finished-at="2020-09-23T11:19:27 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanReportData -->
-        <test-method status="PASS" signature="browserConfig(java.lang.String)[pri:0, instance:com.demo.tests.TestCase_01_UserRegistration@28b46423]" name="browserConfig" is-config="true" duration-ms="3554" started-at="2020-09-22T20:43:59 EEST" finished-at="2020-09-22T20:44:03 EEST">
+        <test-method status="PASS" signature="browserConfig(java.lang.String)[pri:0, instance:com.demo.tests.TestCase_01_UserRegistration@28b46423]" name="browserConfig" is-config="true" duration-ms="4230" started-at="2020-09-23T11:19:27 EEST" finished-at="2020-09-23T11:19:31 EEST">
           <params>
             <param index="0">
               <value>
@@ -22,7 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserConfig -->
-        <test-method status="PASS" signature="setEnvironmentHostUserPass(java.lang.String)[pri:0, instance:com.demo.tests.TestCase_01_UserRegistration@28b46423]" name="setEnvironmentHostUserPass" is-config="true" duration-ms="27" started-at="2020-09-22T20:44:03 EEST" finished-at="2020-09-22T20:44:03 EEST">
+        <test-method status="PASS" signature="setEnvironmentHostUserPass(java.lang.String)[pri:0, instance:com.demo.tests.TestCase_01_UserRegistration@28b46423]" name="setEnvironmentHostUserPass" is-config="true" duration-ms="54" started-at="2020-09-23T11:19:31 EEST" finished-at="2020-09-23T11:19:31 EEST">
           <params>
             <param index="0">
               <value>
@@ -33,7 +33,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setEnvironmentHostUserPass -->
-        <test-method status="PASS" signature="api_bootstrap(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_01_UserRegistration@28b46423]" name="api_bootstrap" duration-ms="1211" started-at="2020-09-22T20:44:03 EEST" description="API" finished-at="2020-09-22T20:44:04 EEST">
+        <test-method status="PASS" signature="api_bootstrap(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_01_UserRegistration@28b46423]" name="api_bootstrap" duration-ms="1379" started-at="2020-09-23T11:19:31 EEST" description="API" finished-at="2020-09-23T11:19:32 EEST">
           <params>
             <param index="0">
               <value>
@@ -44,11 +44,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- api_bootstrap -->
-        <test-method status="PASS" signature="generateReport(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_01_UserRegistration@28b46423]" name="generateReport" is-config="true" duration-ms="1" started-at="2020-09-22T20:44:04 EEST" finished-at="2020-09-22T20:44:04 EEST">
+        <test-method status="PASS" signature="generateReport(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_01_UserRegistration@28b46423]" name="generateReport" is-config="true" duration-ms="1" started-at="2020-09-23T11:19:32 EEST" finished-at="2020-09-23T11:19:32 EEST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@18d910b3]]>
+                <![CDATA[org.testng.TestRunner@7add838c]]>
               </value>
             </param>
             <param index="1">
@@ -60,11 +60,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-        <test-method status="PASS" signature="flushReportData()[pri:0, instance:com.demo.tests.TestCase_01_UserRegistration@28b46423]" name="flushReportData" is-config="true" duration-ms="631" started-at="2020-09-22T20:44:04 EEST" finished-at="2020-09-22T20:44:05 EEST">
+        <test-method status="PASS" signature="flushReportData()[pri:0, instance:com.demo.tests.TestCase_01_UserRegistration@28b46423]" name="flushReportData" is-config="true" duration-ms="613" started-at="2020-09-23T11:19:32 EEST" finished-at="2020-09-23T11:19:33 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReportData -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.demo.tests.TestCase_01_UserRegistration@28b46423]" name="tearDown" is-config="true" duration-ms="186" started-at="2020-09-22T20:44:05 EEST" finished-at="2020-09-22T20:44:05 EEST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.demo.tests.TestCase_01_UserRegistration@28b46423]" name="tearDown" is-config="true" duration-ms="198" started-at="2020-09-23T11:19:33 EEST" finished-at="2020-09-23T11:19:33 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

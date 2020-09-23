@@ -21,8 +21,8 @@ import static com.demo.utilities.Generators.generateMacAddress;
 import static com.jayway.restassured.RestAssured.given;
 
 @Listeners(com.demo.config.TestNGListener.class)
-public class Bootstrap extends BasicTestConfig {
-    static final Logger LOG = LogManager.getLogger(Bootstrap.class);
+public class RegisterNewUser extends BasicTestConfig {
+    static final Logger LOG = LogManager.getLogger(RegisterNewUser.class);
 
     private static String scheme;
     private static String host;
