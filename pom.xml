@@ -159,9 +159,9 @@
                             <value>org.uncommons.reportng.HTMLReporter, org.uncommons.reportng.JUnitXMLReporter, com.demo.config.TestNGListener</value>
                         </property>
                     </properties>
-             <!--       <suiteXmlFiles>
+                    <suiteXmlFiles>
                         <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
-                    </suiteXmlFiles>    -->
+                    </suiteXmlFiles>   
                 </configuration>
             </plugin>
         </plugins>

@@ -491,50 +491,6 @@
         <root url="jar://$USER_HOME$/.m2/repository/com/squareup/okio/okio/2.2.2/okio-2.2.2-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: com.sun.org.apache.xml.internal:resolver:20050927">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.m2/repository/com/sun/org/apache/xml/internal/resolver/20050927/resolver-20050927.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$USER_HOME$/.m2/repository/com/sun/org/apache/xml/internal/resolver/20050927/resolver-20050927-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.m2/repository/com/sun/org/apache/xml/internal/resolver/20050927/resolver-20050927-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: com.sun.xml.bind:jaxb-core:2.2.10-b140802.1033">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.m2/repository/com/sun/xml/bind/jaxb-core/2.2.10-b140802.1033/jaxb-core-2.2.10-b140802.1033.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$USER_HOME$/.m2/repository/com/sun/xml/bind/jaxb-core/2.2.10-b140802.1033/jaxb-core-2.2.10-b140802.1033-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.m2/repository/com/sun/xml/bind/jaxb-core/2.2.10-b140802.1033/jaxb-core-2.2.10-b140802.1033-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: com.sun.xml.bind:jaxb-impl:2.2.10-b140802.1033">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.m2/repository/com/sun/xml/bind/jaxb-impl/2.2.10-b140802.1033/jaxb-impl-2.2.10-b140802.1033.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$USER_HOME$/.m2/repository/com/sun/xml/bind/jaxb-impl/2.2.10-b140802.1033/jaxb-impl-2.2.10-b140802.1033-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.m2/repository/com/sun/xml/bind/jaxb-impl/2.2.10-b140802.1033/jaxb-impl-2.2.10-b140802.1033-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: com.sun.xml.bind:jaxb-jxc:2.2.10-b140802.1033">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.m2/repository/com/sun/xml/bind/jaxb-jxc/2.2.10-b140802.1033/jaxb-jxc-2.2.10-b140802.1033.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$USER_HOME$/.m2/repository/com/sun/xml/bind/jaxb-jxc/2.2.10-b140802.1033/jaxb-jxc-2.2.10-b140802.1033-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.m2/repository/com/sun/xml/bind/jaxb-jxc/2.2.10-b140802.1033/jaxb-jxc-2.2.10-b140802.1033-sources.jar!/" />
-      </SOURCES>
-    </library>
     <library name="Maven: com.sun.xml.bind:jaxb-osgi:2.3.0.1">
       <CLASSES>
         <root url="jar://$USER_HOME$/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.3.0.1/jaxb-osgi-2.3.0.1.jar!/" />
@@ -546,61 +502,6 @@
         <root url="jar://$USER_HOME$/.m2/repository/com/sun/xml/bind/jaxb-osgi/2.3.0.1/jaxb-osgi-2.3.0.1-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: com.sun.xml.bind:jaxb-xjc:2.2.10-b140802.1033">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.m2/repository/com/sun/xml/bind/jaxb-xjc/2.2.10-b140802.1033/jaxb-xjc-2.2.10-b140802.1033.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$USER_HOME$/.m2/repository/com/sun/xml/bind/jaxb-xjc/2.2.10-b140802.1033/jaxb-xjc-2.2.10-b140802.1033-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.m2/repository/com/sun/xml/bind/jaxb-xjc/2.2.10-b140802.1033/jaxb-xjc-2.2.10-b140802.1033-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: com.sun.xml.fastinfoset:FastInfoset:1.2.13">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.13/FastInfoset-1.2.13.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$USER_HOME$/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.13/FastInfoset-1.2.13-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.m2/repository/com/sun/xml/fastinfoset/FastInfoset/1.2.13/FastInfoset-1.2.13-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: com.sun.xml.messaging.saaj:saaj-impl:1.3.25">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.m2/repository/com/sun/xml/messaging/saaj/saaj-impl/1.3.25/saaj-impl-1.3.25.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$USER_HOME$/.m2/repository/com/sun/xml/messaging/saaj/saaj-impl/1.3.25/saaj-impl-1.3.25-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.m2/repository/com/sun/xml/messaging/saaj/saaj-impl/1.3.25/saaj-impl-1.3.25-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: com.sun.xml.stream.buffer:streambuffer:1.5.3">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.m2/repository/com/sun/xml/stream/buffer/streambuffer/1.5.3/streambuffer-1.5.3.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$USER_HOME$/.m2/repository/com/sun/xml/stream/buffer/streambuffer/1.5.3/streambuffer-1.5.3-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.m2/repository/com/sun/xml/stream/buffer/streambuffer/1.5.3/streambuffer-1.5.3-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: com.sun.xml.ws:jaxws-rt:2.2.10">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.m2/repository/com/sun/xml/ws/jaxws-rt/2.2.10/jaxws-rt-2.2.10.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$USER_HOME$/.m2/repository/com/sun/xml/ws/jaxws-rt/2.2.10/jaxws-rt-2.2.10-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.m2/repository/com/sun/xml/ws/jaxws-rt/2.2.10/jaxws-rt-2.2.10-sources.jar!/" />
-      </SOURCES>
-    </library>
     <library name="Maven: com.sun.xml.ws:jaxws-tools:2.2.10">
       <CLASSES>
         <root url="jar://$USER_HOME$/.m2/repository/com/sun/xml/ws/jaxws-tools/2.2.10/jaxws-tools-2.2.10.jar!/" />
@@ -610,17 +511,6 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$USER_HOME$/.m2/repository/com/sun/xml/ws/jaxws-tools/2.2.10/jaxws-tools-2.2.10-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: com.sun.xml.ws:policy:2.4">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.m2/repository/com/sun/xml/ws/policy/2.4/policy-2.4.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$USER_HOME$/.m2/repository/com/sun/xml/ws/policy/2.4/policy-2.4-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.m2/repository/com/sun/xml/ws/policy/2.4/policy-2.4-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: com.thoughtworks.xstream:xstream:1.4.7">
@@ -755,17 +645,6 @@
         <root url="jar://$USER_HOME$/.m2/repository/javax/activation/activation/1.1.1/activation-1.1.1-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: javax.annotation:javax.annotation-api:1.2">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.m2/repository/javax/annotation/javax.annotation-api/1.2/javax.annotation-api-1.2.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$USER_HOME$/.m2/repository/javax/annotation/javax.annotation-api/1.2/javax.annotation-api-1.2-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.m2/repository/javax/annotation/javax.annotation-api/1.2/javax.annotation-api-1.2-sources.jar!/" />
-      </SOURCES>
-    </library>
     <library name="Maven: javax.inject:javax.inject:1">
       <CLASSES>
         <root url="jar://$USER_HOME$/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar!/" />
@@ -777,17 +656,6 @@
         <root url="jar://$USER_HOME$/.m2/repository/javax/inject/javax.inject/1/javax.inject-1-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: javax.jws:jsr181-api:1.0-MR1">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.m2/repository/javax/jws/jsr181-api/1.0-MR1/jsr181-api-1.0-MR1.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$USER_HOME$/.m2/repository/javax/jws/jsr181-api/1.0-MR1/jsr181-api-1.0-MR1-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.m2/repository/javax/jws/jsr181-api/1.0-MR1/jsr181-api-1.0-MR1-sources.jar!/" />
-      </SOURCES>
-    </library>
     <library name="Maven: javax.xml.bind:jaxb-api:2.2.12-b140109.1041">
       <CLASSES>
         <root url="jar://$USER_HOME$/.m2/repository/javax/xml/bind/jaxb-api/2.2.12-b140109.1041/jaxb-api-2.2.12-b140109.1041.jar!/" />
@@ -797,28 +665,6 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$USER_HOME$/.m2/repository/javax/xml/bind/jaxb-api/2.2.12-b140109.1041/jaxb-api-2.2.12-b140109.1041-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: javax.xml.soap:javax.xml.soap-api:1.3.7">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.m2/repository/javax/xml/soap/javax.xml.soap-api/1.3.7/javax.xml.soap-api-1.3.7.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$USER_HOME$/.m2/repository/javax/xml/soap/javax.xml.soap-api/1.3.7/javax.xml.soap-api-1.3.7-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.m2/repository/javax/xml/soap/javax.xml.soap-api/1.3.7/javax.xml.soap-api-1.3.7-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: javax.xml.ws:jaxws-api:2.2.11">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.m2/repository/javax/xml/ws/jaxws-api/2.2.11/jaxws-api-2.2.11.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$USER_HOME$/.m2/repository/javax/xml/ws/jaxws-api/2.2.11/jaxws-api-2.2.11-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.m2/repository/javax/xml/ws/jaxws-api/2.2.11/jaxws-api-2.2.11-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: junit:junit:4.10">
@@ -1085,28 +931,6 @@
         <root url="jar://$USER_HOME$/.m2/repository/org/codehaus/mojo/animal-sniffer-annotations/1.14/animal-sniffer-annotations-1.14-sources.jar!/" />
       </SOURCES>
     </library>
-    <library name="Maven: org.codehaus.woodstox:stax2-api:3.1.1">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.m2/repository/org/codehaus/woodstox/stax2-api/3.1.1/stax2-api-3.1.1.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$USER_HOME$/.m2/repository/org/codehaus/woodstox/stax2-api/3.1.1/stax2-api-3.1.1-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.m2/repository/org/codehaus/woodstox/stax2-api/3.1.1/stax2-api-3.1.1-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: org.codehaus.woodstox:woodstox-core-asl:4.2.0">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.m2/repository/org/codehaus/woodstox/woodstox-core-asl/4.2.0/woodstox-core-asl-4.2.0.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$USER_HOME$/.m2/repository/org/codehaus/woodstox/woodstox-core-asl/4.2.0/woodstox-core-asl-4.2.0-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.m2/repository/org/codehaus/woodstox/woodstox-core-asl/4.2.0/woodstox-core-asl-4.2.0-sources.jar!/" />
-      </SOURCES>
-    </library>
     <library name="Maven: org.easymock:easymock:2.4">
       <CLASSES>
         <root url="jar://$USER_HOME$/.m2/repository/org/easymock/easymock/2.4/easymock-2.4.jar!/" />
@@ -1138,39 +962,6 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$USER_HOME$/.m2/repository/org/freemarker/freemarker/2.3.23/freemarker-2.3.23-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: org.glassfish.external:management-api:3.0.0-b012">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.m2/repository/org/glassfish/external/management-api/3.0.0-b012/management-api-3.0.0-b012.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$USER_HOME$/.m2/repository/org/glassfish/external/management-api/3.0.0-b012/management-api-3.0.0-b012-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.m2/repository/org/glassfish/external/management-api/3.0.0-b012/management-api-3.0.0-b012-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: org.glassfish.gmbal:gmbal-api-only:3.1.0-b001">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.m2/repository/org/glassfish/gmbal/gmbal-api-only/3.1.0-b001/gmbal-api-only-3.1.0-b001.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$USER_HOME$/.m2/repository/org/glassfish/gmbal/gmbal-api-only/3.1.0-b001/gmbal-api-only-3.1.0-b001-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.m2/repository/org/glassfish/gmbal/gmbal-api-only/3.1.0-b001/gmbal-api-only-3.1.0-b001-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: org.glassfish.ha:ha-api:3.1.9">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.m2/repository/org/glassfish/ha/ha-api/3.1.9/ha-api-3.1.9.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$USER_HOME$/.m2/repository/org/glassfish/ha/ha-api/3.1.9/ha-api-3.1.9-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.m2/repository/org/glassfish/ha/ha-api/3.1.9/ha-api-3.1.9-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.hamcrest:hamcrest-all:1.3">
@@ -1292,28 +1083,6 @@
       </JAVADOC>
       <SOURCES>
         <root url="jar://$USER_HOME$/.m2/repository/org/jsoup/jsoup/1.13.1/jsoup-1.13.1-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: org.jvnet.mimepull:mimepull:1.9.4">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.m2/repository/org/jvnet/mimepull/mimepull/1.9.4/mimepull-1.9.4.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$USER_HOME$/.m2/repository/org/jvnet/mimepull/mimepull/1.9.4/mimepull-1.9.4-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.m2/repository/org/jvnet/mimepull/mimepull/1.9.4/mimepull-1.9.4-sources.jar!/" />
-      </SOURCES>
-    </library>
-    <library name="Maven: org.jvnet.staxex:stax-ex:1.7.7">
-      <CLASSES>
-        <root url="jar://$USER_HOME$/.m2/repository/org/jvnet/staxex/stax-ex/1.7.7/stax-ex-1.7.7.jar!/" />
-      </CLASSES>
-      <JAVADOC>
-        <root url="jar://$USER_HOME$/.m2/repository/org/jvnet/staxex/stax-ex/1.7.7/stax-ex-1.7.7-javadoc.jar!/" />
-      </JAVADOC>
-      <SOURCES>
-        <root url="jar://$USER_HOME$/.m2/repository/org/jvnet/staxex/stax-ex/1.7.7/stax-ex-1.7.7-sources.jar!/" />
       </SOURCES>
     </library>
     <library name="Maven: org.mongodb:bson:3.3.0">

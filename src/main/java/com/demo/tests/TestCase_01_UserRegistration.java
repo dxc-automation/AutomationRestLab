@@ -20,6 +20,6 @@ public class TestCase_01_UserRegistration extends RestAssuredConfig {
     @Test(description = "API", priority = 0)
     public void api_bootstrap(Method method) throws Exception {
         testName = method.getName();
-        bootstrap("Android", "6.0", "Samsung");
+        bootstrap("iOS", "6.0", "iPhone X");
     }
 }
