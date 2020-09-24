@@ -18,6 +18,7 @@
             <class name="com.demo.tests.TestCase_01_UserRegistration">
                 <methods>
                     <include name="api_bootstrap"/>
+                    <include name="create_new_user"/>
                 </methods>
             </class>
         </classes>

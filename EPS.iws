@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f00f1476-33d1-457d-8a05-897dee283339" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/EPS.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/EPS.ipr" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/EPS.iws" beforeDir="false" afterPath="$PROJECT_DIR$/EPS.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/properties/Environments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/properties/Environments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/user/RegisterNewUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/user/RegisterNewUser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_01_UserRegistration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_01_UserRegistration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/utilities/Generators.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/utilities/Generators.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
