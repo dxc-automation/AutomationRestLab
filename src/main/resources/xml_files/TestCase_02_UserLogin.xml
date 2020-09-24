@@ -15,7 +15,7 @@
         <parameter name="browser"     value="chrome"/>
         <parameter name="environment" value="fly"/>
         <classes>
-            <class name="com.demo.tests.TestCase_01_UserRegistration">
+            <class name="com.demo.tests.TestCase_02_UserLogin">
                 <methods>
                     <include name="api_bootstrap"/>
                     <include name="create_new_user"/>

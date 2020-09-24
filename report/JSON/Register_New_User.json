@@ -1,0 +1,39 @@
+{
+  "user": {
+    "userId": 8164493,
+    "userStatus": 1,
+    "credentials": [
+      {
+        "type": "email",
+        "credential": "lelia.buckridge@hotmail.com",
+        "verified": false,
+        "channelId": "2"
+      }
+    ],
+    "dateCreated": 1600942935,
+    "lastUpdated": 1600942935,
+    "defaultCardId": 0,
+    "profile": {
+      "gender": "u",
+      "dob": 0
+    },
+    "wallet": [],
+    "address": {
+      "latLng": {}
+    },
+    "appsAgreedToTerms": [
+      1
+    ],
+    "marketingPreferences": [],
+    "color": "#F59641"
+  },
+  "accessToken": "08cb05eb6d7aae6e31243a61d9d777260a4b2c906db7d075d29fe6c39e2eba9c",
+  "firstTimeVisitEligibleLocations": [],
+  "profileFieldIssues": [],
+  "requestInfo": {
+    "accessTokenStatus": "authenticated",
+    "serverTime": 1600942935,
+    "requestId": "605517a8-0507-49f7-8d3d-8350594ce1ce",
+    "apiVersion": 1
+  }
+}

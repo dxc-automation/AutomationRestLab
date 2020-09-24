@@ -13,8 +13,7 @@ import org.testng.Assert;
 import org.testng.annotations.Listeners;
 
 import static com.demo.config.ExtentReport.*;
-import static com.demo.properties.Environments.HOST;
-import static com.demo.properties.Environments.NEW_USER;
+import static com.demo.properties.Environments.*;
 import static com.demo.properties.TestData.*;
 import static com.demo.utilities.FileUtility.createLogFile;
 import static com.jayway.restassured.RestAssured.given;
@@ -43,7 +42,7 @@ public class Login extends BasicTestConfig {
         //*** Create URI for request
         scheme = "https";
         host = HOST;
-        path = NEW_USER;
+        path = LOGIN;
         url  = new URIBuilder()
                 .setScheme(scheme)
                 .setHost(host)
