@@ -12,6 +12,7 @@ import org.testng.annotations.Parameters;
 
 import static com.demo.properties.Environments.HOST;
 import static com.demo.properties.TestData.*;
+import static com.demo.utilities.FileUtility.createLogFile;
 
 public class RestAssuredConfig extends BasicTestConfig {
 
@@ -51,6 +52,17 @@ public class RestAssuredConfig extends BasicTestConfig {
             MAIL = "automation";
         }
     }
+
+
+    //***   Get response details
+    public static void getResponseInfo(Response response) {
+        responseHeaders = response.getHeaders().asList();
+        responseBody    = response.getBody().asString();
+        responseCode    = response.getStatusCode();
+        formattedJson   = response.toString();
+        createLogFile();
+    }
+
 
     public static JSONObject getJsonObjectBody(Response response) {
         JSONObject jsonObject = new JSONObject(response.body().prettyPrint());

@@ -13,10 +13,10 @@ import org.testng.Assert;
 import org.testng.annotations.Listeners;
 
 import static com.demo.config.ExtentReport.*;
+import static com.demo.config.RestAssuredConfig.getResponseInfo;
 import static com.demo.properties.Environments.HOST;
 import static com.demo.properties.Environments.NEW_USER;
 import static com.demo.properties.TestData.*;
-import static com.demo.utilities.FileUtility.createLogFile;
 import static com.demo.utilities.Generators.generateEmail;
 import static com.jayway.restassured.RestAssured.given;
 
@@ -89,11 +89,8 @@ public class RegisterNewUser extends BasicTestConfig {
                 .extract()
                 .response();
 
-        responseHeaders = response.getHeaders().asList();
-        responseBody    = response.getBody().asString();
-        responseCode    = response.getStatusCode();
-        formattedJson   = response.toString();
-        createLogFile();
+        //*** Get all response details
+        getResponseInfo(response);
 
 
         //***   Get parameter value from response

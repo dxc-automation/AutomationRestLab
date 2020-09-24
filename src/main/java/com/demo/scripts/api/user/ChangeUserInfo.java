@@ -20,15 +20,14 @@ import static com.demo.properties.TestData.*;
 import static com.jayway.restassured.RestAssured.given;
 
 @Listeners(com.demo.config.TestNGListener.class)
-public class Login extends BasicTestConfig {
-    static final Logger LOG = LogManager.getLogger(Login.class);
+public class ChangeUserInfo extends BasicTestConfig {
+    static final Logger LOG = LogManager.getLogger(ChangeUserInfo.class);
 
     private static String scheme;
     private static String host;
     private static String path;
 
 
-    //*** Send request and receive response method
     public static void user_login() throws Exception {
         //***   Print test name and test description
         testName = "User_Login";
@@ -53,12 +52,7 @@ public class Login extends BasicTestConfig {
 
 
         //***   Request Body
-        JSONObject marketingPreferences = new JSONObject();
-        marketingPreferences.put("businessId", 12);
-        marketingPreferences.put("optIn", true);
-
         JSONObject jsonPostData = new JSONObject();
-        jsonPostData.put("credentialsType", "email");
         jsonPostData.put("countryCodeId", 221);
         jsonPostData.put("email", credentials);
         jsonPostData.put("phoneNumber", "7777999000");
@@ -67,6 +61,7 @@ public class Login extends BasicTestConfig {
         jsonPostData.put("challenge",      "1234");
 
 
+        //*** Generate request details
         RequestSpecBuilder builder = new RequestSpecBuilder();
         builder.setBaseUri(url);
         builder.setBody(jsonPostData.toJSONString());
@@ -77,6 +72,7 @@ public class Login extends BasicTestConfig {
         generateRequestReport(scheme, host, path, jsonPostData.toJSONString());
 
 
+        //***   Send request
         response = given()
                 .spec(requestSpecification)
                 .log().all()
