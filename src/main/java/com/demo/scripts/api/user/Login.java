@@ -17,7 +17,6 @@ import static com.demo.properties.Environments.HOST;
 import static com.demo.properties.Environments.NEW_USER;
 import static com.demo.properties.TestData.*;
 import static com.demo.utilities.FileUtility.createLogFile;
-import static com.demo.utilities.Generators.generateEmail;
 import static com.jayway.restassured.RestAssured.given;
 
 @Listeners(com.demo.config.TestNGListener.class)
@@ -59,13 +58,13 @@ public class Login extends BasicTestConfig {
         marketingPreferences.put("optIn", true);
 
         JSONObject jsonPostData = new JSONObject();
-        jsonPostData.put("email", generateEmail());
-        jsonPostData.put("countryCodeId", "221");
-        jsonPostData.put("phoneNumber", "7766283747");
-        jsonPostData.put("marketingPreferences", marketingPreferences);
-        jsonPostData.put("password","1234");
         jsonPostData.put("credentialsType", "email");
-        jsonPostData.put("pinCode",      "1234");
+        jsonPostData.put("countryCodeId", 221);
+        jsonPostData.put("email", credentials);
+        jsonPostData.put("phoneNumber", "7777999000");
+        jsonPostData.put("password","1234");
+        jsonPostData.put("credentialsType", "pin");
+        jsonPostData.put("challenge",      "1234");
 
 
         RequestSpecBuilder builder = new RequestSpecBuilder();

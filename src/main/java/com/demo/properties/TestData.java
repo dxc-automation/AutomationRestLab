@@ -30,7 +30,7 @@ public class TestData {
     public static int          responseCode;
 
     public static String accessToken;
-
+    public static String credentials;
     public static URI url;
     public static String env;
     public static String responseBody;
