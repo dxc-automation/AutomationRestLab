@@ -1,17 +1,17 @@
 {
   "user": {
-    "userId": 8164401,
+    "userId": 8164493,
     "userStatus": 1,
     "credentials": [
       {
         "type": "email",
-        "credential": "lindsay.mcglynn@yahoo.com",
+        "credential": "lelia.buckridge@hotmail.com",
         "verified": false,
         "channelId": "2"
       }
     ],
-    "dateCreated": 1600941404,
-    "lastUpdated": 1600941404,
+    "dateCreated": 1600942935,
+    "lastUpdated": 1600942935,
     "defaultCardId": 0,
     "profile": {
       "gender": "u",
@@ -25,15 +25,15 @@
       1
     ],
     "marketingPreferences": [],
-    "color": "#F4DF8A"
+    "color": "#F59641"
   },
-  "accessToken": "a3cc34a8cded39ca5b2a0cff4a02a636ddee6690ed761eef240f581d96b9c1c8",
+  "accessToken": "08cb05eb6d7aae6e31243a61d9d777260a4b2c906db7d075d29fe6c39e2eba9c",
   "firstTimeVisitEligibleLocations": [],
   "profileFieldIssues": [],
   "requestInfo": {
     "accessTokenStatus": "authenticated",
-    "serverTime": 1600941405,
-    "requestId": "4e553257-c154-43a0-b45a-c45fc44a04a8",
+    "serverTime": 1600942935,
+    "requestId": "605517a8-0507-49f7-8d3d-8350594ce1ce",
     "apiVersion": 1
   }
 }
