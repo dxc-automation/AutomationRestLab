@@ -13,11 +13,11 @@ import org.testng.Assert;
 import org.testng.annotations.Listeners;
 
 import static com.demo.config.ExtentReport.*;
-import static com.demo.properties.Environments.BOOTSTRAP;
 import static com.demo.properties.Environments.HOST;
+import static com.demo.properties.Environments.NEW_USER;
 import static com.demo.properties.TestData.*;
 import static com.demo.utilities.FileUtility.createLogFile;
-import static com.demo.utilities.Generators.generateMacAddress;
+import static com.demo.utilities.Generators.generateEmail;
 import static com.jayway.restassured.RestAssured.given;
 
 @Listeners(com.demo.config.TestNGListener.class)
@@ -30,9 +30,9 @@ public class RegisterNewUser extends BasicTestConfig {
 
 
     //*** Send request and receive response method
-    public static void bootstrap(String platform, String platform_version, String device) throws Exception {
+    public static void register_new_user() throws Exception {
         //***   Print test name and test description
-        testName = "Create_New_Domain";
+        testName = "Register_New_User";
         testDescription = "The purpose of this test is to verify that the login functionality is working as expected" +
                 "<br><br><b>*****   D E S C R I P T I O N   *****</b><br><br>" +
                 "[1] Check that the login page can be opened and displayed with correct title.<br>" +
@@ -44,23 +44,28 @@ public class RegisterNewUser extends BasicTestConfig {
         //*** Create URI for request
         scheme = "https";
         host = HOST;
-        path = BOOTSTRAP;
+        path = NEW_USER;
         url  = new URIBuilder()
                 .setScheme(scheme)
                 .setHost(host)
                 .setPath(path)
+                .addParameter("accessToken", accessToken)
                 .build();
 
 
         //***   Request Body
+        JSONObject marketingPreferences = new JSONObject();
+        marketingPreferences.put("businessId", 12);
+        marketingPreferences.put("optIn", true);
+
         JSONObject jsonPostData = new JSONObject();
-        jsonPostData.put("deviceToken",     generateMacAddress());
-        jsonPostData.put("platform",        platform);
-        jsonPostData.put("platformVersion", platform_version);
-        jsonPostData.put("appId",           1);
-        jsonPostData.put("frameworkVersion","1.0.0");
-        jsonPostData.put("model",           device);
-        jsonPostData.put("appVersion",      "1.0.0");
+        jsonPostData.put("email", generateEmail());
+        jsonPostData.put("countryCodeId", "221");
+        jsonPostData.put("phoneNumber", "7766283747");
+        jsonPostData.put("marketingPreferences", marketingPreferences);
+        jsonPostData.put("password","1234");
+        jsonPostData.put("credentialsType", "email");
+        jsonPostData.put("pinCode",      "1234");
 
 
         RequestSpecBuilder builder = new RequestSpecBuilder();
