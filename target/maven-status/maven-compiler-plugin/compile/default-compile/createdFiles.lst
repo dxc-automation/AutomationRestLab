@@ -1,3 +1,4 @@
+com\demo\scripts\api\user\ChangeUserInfo.class
 com\demo\tests\TestCase_02_UserLogin.class
 com\demo\utilities\user_interface\Assertions$1.class
 com\demo\utilities\user_interface\WebDriverUtils.class

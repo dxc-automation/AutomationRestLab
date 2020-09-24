@@ -21,9 +21,10 @@ public class Environments extends BasicTestConfig {
 
 
     //***** DOMAINS
-    public final static String BOOTSTRAP = "/v1/apps/bootstrap";
-    public final static String NEW_USER  = "/v1/user";
-    public final static String LOGIN     = "/v2/auth/login";
+    public final static String BOOTSTRAP        = "/v1/apps/bootstrap";
+    public final static String NEW_USER         = "/v1/user";
+    public final static String LOGIN            = "/v2/auth/login";
+    public final static String CHANGE_USER_INFO = "/v1/user/me/profile-field";
 
 
     //***** EMAIL ADDRESS

@@ -96,15 +96,15 @@ public class RegisterNewUser extends BasicTestConfig {
         //***   Get parameter value from response
         try {
             ResponseBody responseBody = response.getBody();
-            credentials = responseBody.jsonPath().getJsonObject("credentials");
+            credentials = responseBody.jsonPath().getJsonObject("credential");
+            user_city   = responseBody.jsonPath().getJsonObject("city");
         test.info("<pre>"
                     + "<br/>"
                     + "<center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center>"
                     + "<br />"
+                    + "city:        " + user_city
+                    + "credentials: " + credentials
                     + "<br />"
-                    + "credentials:   " + credentials
-                    + "<br />"
-                    + "<br/>"
                     + "</pre>");
         } catch (Exception exception) {
             System.out.println("Get values from the response body has failed");

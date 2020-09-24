@@ -14,8 +14,7 @@ import org.testng.annotations.Listeners;
 
 import static com.demo.config.ExtentReport.*;
 import static com.demo.config.RestAssuredConfig.getResponseInfo;
-import static com.demo.properties.Environments.HOST;
-import static com.demo.properties.Environments.LOGIN;
+import static com.demo.properties.Environments.*;
 import static com.demo.properties.TestData.*;
 import static com.jayway.restassured.RestAssured.given;
 
@@ -42,7 +41,7 @@ public class ChangeUserInfo extends BasicTestConfig {
         //*** Create URI for request
         scheme = "https";
         host = HOST;
-        path = LOGIN;
+        path = CHANGE_USER_INFO;
         url  = new URIBuilder()
                 .setScheme(scheme)
                 .setHost(host)
@@ -52,13 +51,11 @@ public class ChangeUserInfo extends BasicTestConfig {
 
 
         //***   Request Body
-        JSONObject jsonPostData = new JSONObject();
-        jsonPostData.put("countryCodeId", 221);
-        jsonPostData.put("email", credentials);
-        jsonPostData.put("phoneNumber", "7777999000");
-        jsonPostData.put("password","1234");
-        jsonPostData.put("credentialsType", "pin");
-        jsonPostData.put("challenge",      "1234");
+        JSONObject profileFields = new JSONObject();
+        JSONObject nameField     = new JSONObject();
+        nameField.put("name-of-field", "");
+        JSONObject jsonPostData  = new JSONObject();
+        jsonPostData.put("profileFields", profileFields);
 
 
         //*** Generate request details

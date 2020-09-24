@@ -53,10 +53,6 @@ public class Login extends BasicTestConfig {
 
 
         //***   Request Body
-        JSONObject marketingPreferences = new JSONObject();
-        marketingPreferences.put("businessId", 12);
-        marketingPreferences.put("optIn", true);
-
         JSONObject jsonPostData = new JSONObject();
         jsonPostData.put("credentialsType", "email");
         jsonPostData.put("countryCodeId", 221);
@@ -87,6 +83,7 @@ public class Login extends BasicTestConfig {
                 .log().all()
                 .extract()
                 .response();
+
 
         //*** Get all response details
         getResponseInfo(response);

@@ -32,7 +32,7 @@ public class Bootstrap extends BasicTestConfig {
     //*** Send request and receive response method
     public static void bootstrap(String platform, String platform_version, String device) throws Exception {
         //***   Print test name and test description
-        testName = "Create_New_Domain";
+        testName = "API_Bootstrap";
         testDescription = "The purpose of this test is to verify that the login functionality is working as expected" +
                 "<br><br><b>*****   D E S C R I P T I O N   *****</b><br><br>" +
                 "[1] Check that the login page can be opened and displayed with correct title.<br>" +

@@ -31,6 +31,7 @@ public class TestData {
 
     public static String accessToken;
     public static String credentials;
+    public static String user_city;
     public static URI url;
     public static String env;
     public static String responseBody;
