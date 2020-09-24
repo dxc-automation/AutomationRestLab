@@ -1,3 +1,4 @@
+com\demo\tests\TestCase_02_UserLogin.class
 com\demo\utilities\user_interface\Assertions$1.class
 com\demo\utilities\user_interface\WebDriverUtils.class
 com\demo\utilities\FileUtility.class
@@ -25,5 +26,6 @@ com\demo\properties\Environments.class
 com\demo\properties\FilePaths.class
 com\demo\utilities\Generators.class
 com\demo\utilities\user_interface\ElementScreenshot.class
+com\demo\scripts\api\user\Login.class
 com\demo\config\ExtentReport.class
 com\demo\properties\TestData.class

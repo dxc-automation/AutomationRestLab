@@ -1,3 +1,4 @@
+E:\Frameworks\AutomationRestLab\src\main\java\com\demo\scripts\api\user\Login.java
 E:\Frameworks\AutomationRestLab\src\main\java\com\demo\utilities\user_interface\AlertHandling.java
 E:\Frameworks\AutomationRestLab\src\main\java\com\demo\config\ExtentReport.java
 E:\Frameworks\AutomationRestLab\src\main\java\com\demo\utilities\user_interface\PageScroll.java
@@ -14,6 +15,7 @@ E:\Frameworks\AutomationRestLab\src\main\java\com\demo\tests\TestCase_01_UserReg
 E:\Frameworks\AutomationRestLab\src\main\java\com\demo\scripts\api\user\Bootstrap.java
 E:\Frameworks\AutomationRestLab\src\main\java\com\demo\utilities\user_interface\SpecializedScreenRecorder.java
 E:\Frameworks\AutomationRestLab\src\main\java\com\demo\properties\FilePaths.java
+E:\Frameworks\AutomationRestLab\src\main\java\com\demo\tests\TestCase_02_UserLogin.java
 E:\Frameworks\AutomationRestLab\src\main\java\com\demo\config\TestNGListener.java
 E:\Frameworks\AutomationRestLab\src\main\java\com\demo\utilities\user_interface\ImageCompare.java
 E:\Frameworks\AutomationRestLab\src\main\java\com\demo\utilities\web_services\MyStringResponseHandler.java

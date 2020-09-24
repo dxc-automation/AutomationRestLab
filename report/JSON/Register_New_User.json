@@ -1,0 +1,39 @@
+{
+  "user": {
+    "userId": 8164401,
+    "userStatus": 1,
+    "credentials": [
+      {
+        "type": "email",
+        "credential": "lindsay.mcglynn@yahoo.com",
+        "verified": false,
+        "channelId": "2"
+      }
+    ],
+    "dateCreated": 1600941404,
+    "lastUpdated": 1600941404,
+    "defaultCardId": 0,
+    "profile": {
+      "gender": "u",
+      "dob": 0
+    },
+    "wallet": [],
+    "address": {
+      "latLng": {}
+    },
+    "appsAgreedToTerms": [
+      1
+    ],
+    "marketingPreferences": [],
+    "color": "#F4DF8A"
+  },
+  "accessToken": "a3cc34a8cded39ca5b2a0cff4a02a636ddee6690ed761eef240f581d96b9c1c8",
+  "firstTimeVisitEligibleLocations": [],
+  "profileFieldIssues": [],
+  "requestInfo": {
+    "accessTokenStatus": "authenticated",
+    "serverTime": 1600941405,
+    "requestId": "4e553257-c154-43a0-b45a-c45fc44a04a8",
+    "apiVersion": 1
+  }
+}
