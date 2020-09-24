@@ -2,10 +2,6 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 <suite name="Demo Test Suite" configfailurepolicy="continue" verbose="10"  thread-count="5">
-    <!--    ENVIRONMENTS    -->
-    <!--    [1] internal    -->
-    <!--    [2] web-trader  -->
-    <!--    [3] production  -->
 
     <listeners>
         <listener class-name="com.demo.config.TestNGListener"/>

@@ -13,10 +13,10 @@ import org.testng.Assert;
 import org.testng.annotations.Listeners;
 
 import static com.demo.config.ExtentReport.*;
+import static com.demo.config.RestAssuredConfig.getResponseInfo;
 import static com.demo.properties.Environments.BOOTSTRAP;
 import static com.demo.properties.Environments.HOST;
 import static com.demo.properties.TestData.*;
-import static com.demo.utilities.FileUtility.createLogFile;
 import static com.demo.utilities.Generators.generateMacAddress;
 import static com.jayway.restassured.RestAssured.given;
 
@@ -32,7 +32,7 @@ public class Bootstrap extends BasicTestConfig {
     //*** Send request and receive response method
     public static void bootstrap(String platform, String platform_version, String device) throws Exception {
         //***   Print test name and test description
-        testName = "Create_New_Domain";
+        testName = "API_Bootstrap";
         testDescription = "The purpose of this test is to verify that the login functionality is working as expected" +
                 "<br><br><b>*****   D E S C R I P T I O N   *****</b><br><br>" +
                 "[1] Check that the login page can be opened and displayed with correct title.<br>" +
@@ -84,11 +84,8 @@ public class Bootstrap extends BasicTestConfig {
                 .extract()
                 .response();
 
-        responseHeaders = response.getHeaders().asList();
-        responseBody    = response.getBody().asString();
-        responseCode    = response.getStatusCode();
-        formattedJson   = response.toString();
-        createLogFile();
+        //*** Get all response details
+        getResponseInfo(response);
 
 
         //***   Get parameter value from response

@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+<testng-results skipped="0" failed="1" ignored="0" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Demo Test Suite" duration-ms="6636" started-at="2020-09-24T13:22:09 EEST" finished-at="2020-09-24T13:22:15 EEST">
+  <suite name="Demo Test Suite" duration-ms="8290" started-at="2020-09-24T16:22:22 EEST" finished-at="2020-09-24T16:22:30 EEST">
     <groups>
     </groups>
-    <test name="TC_01_Domain" duration-ms="6636" started-at="2020-09-24T13:22:09 EEST" finished-at="2020-09-24T13:22:15 EEST">
-      <class name="com.demo.tests.TestCase_01_UserRegistration">
-        <test-method status="PASS" signature="cleanReportData()[pri:0, instance:com.demo.tests.TestCase_01_UserRegistration@28b46423]" name="cleanReportData" is-config="true" duration-ms="9" started-at="2020-09-24T13:22:09 EEST" finished-at="2020-09-24T13:22:09 EEST">
+    <test name="TC_01_Domain" duration-ms="8290" started-at="2020-09-24T16:22:22 EEST" finished-at="2020-09-24T16:22:30 EEST">
+      <class name="com.demo.tests.TestCase_02_UserLogin">
+        <test-method status="PASS" signature="cleanReportData()[pri:0, instance:com.demo.tests.TestCase_02_UserLogin@4e07b95f]" name="cleanReportData" is-config="true" duration-ms="15" started-at="2020-09-24T16:22:22 EEST" finished-at="2020-09-24T16:22:22 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- cleanReportData -->
-        <test-method status="PASS" signature="browserConfig(java.lang.String)[pri:0, instance:com.demo.tests.TestCase_01_UserRegistration@28b46423]" name="browserConfig" is-config="true" duration-ms="3730" started-at="2020-09-24T13:22:09 EEST" finished-at="2020-09-24T13:22:13 EEST">
+        <test-method status="PASS" signature="browserConfig(java.lang.String)[pri:0, instance:com.demo.tests.TestCase_02_UserLogin@4e07b95f]" name="browserConfig" is-config="true" duration-ms="4100" started-at="2020-09-24T16:22:22 EEST" finished-at="2020-09-24T16:22:26 EEST">
           <params>
             <param index="0">
               <value>
@@ -22,7 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browserConfig -->
-        <test-method status="PASS" signature="setEnvironmentHostUserPass(java.lang.String)[pri:0, instance:com.demo.tests.TestCase_01_UserRegistration@28b46423]" name="setEnvironmentHostUserPass" is-config="true" duration-ms="30" started-at="2020-09-24T13:22:13 EEST" finished-at="2020-09-24T13:22:13 EEST">
+        <test-method status="PASS" signature="setEnvironmentHostUserPass(java.lang.String)[pri:0, instance:com.demo.tests.TestCase_02_UserLogin@4e07b95f]" name="setEnvironmentHostUserPass" is-config="true" duration-ms="46" started-at="2020-09-24T16:22:26 EEST" finished-at="2020-09-24T16:22:26 EEST">
           <params>
             <param index="0">
               <value>
@@ -33,69 +33,138 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setEnvironmentHostUserPass -->
-        <test-method status="PASS" signature="api_bootstrap(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_01_UserRegistration@28b46423]" name="api_bootstrap" duration-ms="1395" started-at="2020-09-24T13:22:13 EEST" description="API" finished-at="2020-09-24T13:22:14 EEST">
+        <test-method status="PASS" signature="api_bootstrap(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_02_UserLogin@4e07b95f]" name="api_bootstrap" duration-ms="1800" started-at="2020-09-24T16:22:26 EEST" description="API" finished-at="2020-09-24T16:22:28 EEST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.demo.tests.TestCase_01_UserRegistration.api_bootstrap(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void com.demo.tests.TestCase_02_UserLogin.api_bootstrap(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- api_bootstrap -->
-        <test-method status="PASS" signature="generateReport(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_01_UserRegistration@28b46423]" name="generateReport" is-config="true" duration-ms="1" started-at="2020-09-24T13:22:14 EEST" finished-at="2020-09-24T13:22:14 EEST">
+        <test-method status="PASS" signature="generateReport(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_02_UserLogin@4e07b95f]" name="generateReport" is-config="true" duration-ms="1" started-at="2020-09-24T16:22:28 EEST" finished-at="2020-09-24T16:22:28 EEST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@30221cfa]]>
+                <![CDATA[org.testng.TestRunner@5b8599c7]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[TestResult name=api_bootstrap status=SUCCESS method=TestCase_01_UserRegistration.api_bootstrap(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_01_UserRegistration@28b46423] output={null}]]]>
+                <![CDATA[[TestResult name=api_bootstrap status=SUCCESS method=TestCase_02_UserLogin.api_bootstrap(java.lang.reflect.Method)[pri:0, instance:com.demo.tests.TestCase_02_UserLogin@4e07b95f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-        <test-method status="PASS" signature="create_new_user(java.lang.reflect.Method)[pri:1, instance:com.demo.tests.TestCase_01_UserRegistration@28b46423]" name="create_new_user" duration-ms="670" started-at="2020-09-24T13:22:14 EEST" description="API" finished-at="2020-09-24T13:22:15 EEST">
+        <test-method status="PASS" signature="create_new_user(java.lang.reflect.Method)[pri:1, instance:com.demo.tests.TestCase_02_UserLogin@4e07b95f]" name="create_new_user" duration-ms="837" started-at="2020-09-24T16:22:28 EEST" description="API" finished-at="2020-09-24T16:22:29 EEST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.demo.tests.TestCase_01_UserRegistration.create_new_user(java.lang.reflect.Method) throws java.lang.Exception]]>
+                <![CDATA[public void com.demo.tests.TestCase_02_UserLogin.create_new_user(java.lang.reflect.Method) throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- create_new_user -->
-        <test-method status="PASS" signature="generateReport(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_01_UserRegistration@28b46423]" name="generateReport" is-config="true" duration-ms="1" started-at="2020-09-24T13:22:15 EEST" finished-at="2020-09-24T13:22:15 EEST">
+        <test-method status="PASS" signature="generateReport(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_02_UserLogin@4e07b95f]" name="generateReport" is-config="true" duration-ms="3" started-at="2020-09-24T16:22:29 EEST" finished-at="2020-09-24T16:22:29 EEST">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@30221cfa]]>
+                <![CDATA[org.testng.TestRunner@5b8599c7]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[[TestResult name=create_new_user status=SUCCESS method=TestCase_01_UserRegistration.create_new_user(java.lang.reflect.Method)[pri:1, instance:com.demo.tests.TestCase_01_UserRegistration@28b46423] output={null}]]]>
+                <![CDATA[[TestResult name=create_new_user status=SUCCESS method=TestCase_02_UserLogin.create_new_user(java.lang.reflect.Method)[pri:1, instance:com.demo.tests.TestCase_02_UserLogin@4e07b95f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-        <test-method status="PASS" signature="flushReportData()[pri:0, instance:com.demo.tests.TestCase_01_UserRegistration@28b46423]" name="flushReportData" is-config="true" duration-ms="602" started-at="2020-09-24T13:22:15 EEST" finished-at="2020-09-24T13:22:15 EEST">
+        <test-method status="FAIL" signature="login(java.lang.reflect.Method)[pri:1, instance:com.demo.tests.TestCase_02_UserLogin@4e07b95f]" name="login" duration-ms="450" started-at="2020-09-24T16:22:29 EEST" description="API" finished-at="2020-09-24T16:22:29 EEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void com.demo.tests.TestCase_02_UserLogin.login(java.lang.reflect.Method) throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:97)
+at org.testng.Assert.failNotEquals(Assert.java:969)
+at org.testng.Assert.assertTrue(Assert.java:43)
+at org.testng.Assert.assertTrue(Assert.java:53)
+at com.demo.scripts.api.user.Login.user_login(Login.java:110)
+at com.demo.tests.TestCase_02_UserLogin.login(TestCase_02_UserLogin.java:39)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:134)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:597)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:816)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.util.ArrayList.forEach(Unknown Source)
+at org.testng.TestRunner.privateRun(TestRunner.java:766)
+at org.testng.TestRunner.run(TestRunner.java:587)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:384)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:378)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:337)
+at org.testng.SuiteRunner.run(SuiteRunner.java:286)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1187)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1109)
+at org.testng.TestNG.runSuites(TestNG.java:1039)
+at org.testng.TestNG.run(TestNG.java:1007)
+at org.testng.TestNG.privateMain(TestNG.java:1336)
+at org.testng.TestNG.main(TestNG.java:1304)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="generateReport(org.testng.ITestContext, org.testng.ITestResult)[pri:0, instance:com.demo.tests.TestCase_02_UserLogin@4e07b95f]" name="generateReport" is-config="true" duration-ms="12" started-at="2020-09-24T16:22:29 EEST" finished-at="2020-09-24T16:22:29 EEST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5b8599c7]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[[TestResult name=login status=FAILURE method=TestCase_02_UserLogin.login(java.lang.reflect.Method)[pri:1, instance:com.demo.tests.TestCase_02_UserLogin@4e07b95f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generateReport -->
+        <test-method status="PASS" signature="flushReportData()[pri:0, instance:com.demo.tests.TestCase_02_UserLogin@4e07b95f]" name="flushReportData" is-config="true" duration-ms="679" started-at="2020-09-24T16:22:29 EEST" finished-at="2020-09-24T16:22:30 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- flushReportData -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.demo.tests.TestCase_01_UserRegistration@28b46423]" name="tearDown" is-config="true" duration-ms="189" started-at="2020-09-24T13:22:15 EEST" finished-at="2020-09-24T13:22:15 EEST">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.demo.tests.TestCase_02_UserLogin@4e07b95f]" name="tearDown" is-config="true" duration-ms="327" started-at="2020-09-24T16:22:30 EEST" finished-at="2020-09-24T16:22:30 EEST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.demo.tests.TestCase_01_UserRegistration -->
+      </class> <!-- com.demo.tests.TestCase_02_UserLogin -->
     </test> <!-- TC_01_Domain -->
   </suite> <!-- Demo Test Suite -->
 </testng-results>

@@ -22,6 +22,7 @@ E:\Frameworks\AutomationRestLab\src\main\java\com\demo\utilities\web_services\My
 E:\Frameworks\AutomationRestLab\src\main\java\com\demo\utilities\user_interface\GetElementText.java
 E:\Frameworks\AutomationRestLab\src\main\java\com\demo\utilities\web_services\HttpURLConnectionConfig.java
 E:\Frameworks\AutomationRestLab\src\main\java\com\demo\properties\TestData.java
+E:\Frameworks\AutomationRestLab\src\main\java\com\demo\scripts\api\user\ChangeUserInfo.java
 E:\Frameworks\AutomationRestLab\src\main\java\com\demo\scripts\api\user\RegisterNewUser.java
 E:\Frameworks\AutomationRestLab\src\main\java\com\demo\config\ConsoleRunner.java
 E:\Frameworks\AutomationRestLab\src\main\java\com\demo\utilities\user_interface\Basic.java

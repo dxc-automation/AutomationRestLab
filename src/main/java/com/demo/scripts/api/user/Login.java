@@ -13,9 +13,10 @@ import org.testng.Assert;
 import org.testng.annotations.Listeners;
 
 import static com.demo.config.ExtentReport.*;
-import static com.demo.properties.Environments.*;
+import static com.demo.config.RestAssuredConfig.getResponseInfo;
+import static com.demo.properties.Environments.HOST;
+import static com.demo.properties.Environments.LOGIN;
 import static com.demo.properties.TestData.*;
-import static com.demo.utilities.FileUtility.createLogFile;
 import static com.jayway.restassured.RestAssured.given;
 
 @Listeners(com.demo.config.TestNGListener.class)
@@ -52,10 +53,6 @@ public class Login extends BasicTestConfig {
 
 
         //***   Request Body
-        JSONObject marketingPreferences = new JSONObject();
-        marketingPreferences.put("businessId", 12);
-        marketingPreferences.put("optIn", true);
-
         JSONObject jsonPostData = new JSONObject();
         jsonPostData.put("credentialsType", "email");
         jsonPostData.put("countryCodeId", 221);
@@ -87,11 +84,9 @@ public class Login extends BasicTestConfig {
                 .extract()
                 .response();
 
-        responseHeaders = response.getHeaders().asList();
-        responseBody    = response.getBody().asString();
-        responseCode    = response.getStatusCode();
-        formattedJson   = response.toString();
-        createLogFile();
+
+        //*** Get all response details
+        getResponseInfo(response);
 
 
         //***   Get parameter value from response
