@@ -99,13 +99,13 @@ public class RegisterNewUser extends BasicTestConfig {
         //***   Get parameter value from response
         try {
             ResponseBody responseBody = response.getBody();
-            accessToken = responseBody.jsonPath().getJsonObject("accessToken");
+            credentials = responseBody.jsonPath().getJsonObject("credentials");
         test.info("<pre>"
                     + "<br/>"
                     + "<center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center>"
                     + "<br />"
                     + "<br />"
-                    + "accessToken:   " + accessToken
+                    + "credentials:   " + credentials
                     + "<br />"
                     + "<br/>"
                     + "</pre>");
