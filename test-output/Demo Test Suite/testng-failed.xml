@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite configfailurepolicy="continue" guice-stage="DEVELOPMENT" verbose="10" name="Failed suite [Demo Test Suite]">
+  <listeners>
+    <listener class-name="com.demo.config.TestNGListener"/>
+  </listeners>
+  <test thread-count="5" verbose="10" name="TC_01_Domain(failed)">
+    <classes>
+      <class name="com.demo.tests.TestCase_01">
+        <methods>
+          <include name="endReport"/>
+          <include name="cleanReportData"/>
+          <include name="add_new_basket" invocation-numbers="0"/>
+          <include name="generateReport"/>
+        </methods>
+      </class> <!-- com.demo.tests.TestCase_01 -->
+    </classes>
+  </test> <!-- TC_01_Domain(failed) -->
+</suite> <!-- Failed suite [Demo Test Suite] -->

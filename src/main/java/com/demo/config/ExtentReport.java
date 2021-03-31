@@ -3,17 +3,14 @@ package com.demo.config;
 import com.aventstack.extentreports.AnalysisStrategy;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
+import com.aventstack.extentreports.reporter.ExtentKlovReporter;
+import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
 
-import static com.demo.properties.FilePaths.report_config_xml_file;
 import static com.demo.properties.FilePaths.report_html_file;
-import static com.demo.properties.TestData.env;
-import static com.demo.properties.TestData.url;
-import static com.demo.utilities.FileUtility.getFormattedJson;
 
 
 /**
@@ -28,18 +25,18 @@ public class ExtentReport {
 
     public static ExtentTest    test;
     public static ExtentReports extent;
-    private static ExtentHtmlReporter htmlReporter;
+    private static ExtentSparkReporter htmlReporter;
+    private static ExtentKlovReporter  kiovReporter;
 
-    private static String osName    = System.getProperty("os.name");
-    private static String osVersion = System.getProperty("os.version");
-    private static String osArch    = System.getProperty("os.arch");
+    private static final String osName    = System.getProperty("os.name");
+    private static final String osVersion = System.getProperty("os.version");
+    private static final String osArch    = System.getProperty("os.arch");
 
     public static ExtentReports GetExtent() throws UnknownHostException {
         if (extent != null)
             return extent;
         extent = new ExtentReports();
-        extent.attachReporter(getHtmlReporter());
-        extent.attachReporter(htmlReporter);
+        extent.attachReporter(getHtmlReporter(), kiovReporter);
 
         InetAddress localHost = InetAddress.getLocalHost();
         String hostname = localHost.getHostName();
@@ -50,19 +47,11 @@ public class ExtentReport {
         extent.setSystemInfo("OS Version", osVersion);
         extent.setSystemInfo("OS Arch",    osArch);
 
-        if (env.equalsIgnoreCase("internal")) {
-            extent.setSystemInfo("Environment",    "internal.degiro.eu");
-        } else if (env.equalsIgnoreCase("webtrader")) {
-            extent.setSystemInfo("Environment",    "test-webtrader.internal.degiro.eu");
-        } else if (env.equalsIgnoreCase("weekly")) {
-            extent.setSystemInfo("Environment",    "test-weekly-webtrader.internal.degiro.eu");
-        }
         return extent;
     }
 
-    private static ExtentHtmlReporter getHtmlReporter() {
-        htmlReporter = new ExtentHtmlReporter(report_html_file);
-        htmlReporter.loadXMLConfig(report_config_xml_file);
+    private static ExtentSparkReporter getHtmlReporter() {
+        htmlReporter = new ExtentSparkReporter(report_html_file);
         htmlReporter.config().setTheme(Theme.DARK);
         htmlReporter.config().setEncoding("UTF-8");
         return htmlReporter;
@@ -70,7 +59,7 @@ public class ExtentReport {
 
 
     //***   Method that start report listener
-    public static void startTestReport(String testName, String testDescription) throws Exception {
+    public static void startTestReport(String testName, String testDescription, String testAuthor, String functionality) throws Exception {
         extent = GetExtent();
         test   = extent.createTest(
                 "<b>" + testName + "</b>",
@@ -81,6 +70,10 @@ public class ExtentReport {
                         + "</p>"
                         + "</pre>");
         extent.setAnalysisStrategy(AnalysisStrategy.TEST);
+        test.assignDevice(osName + " " + osVersion);
+        test.assignAuthor(testAuthor);
+        test.assignCategory(functionality);
+
     }
 
 
@@ -93,10 +86,10 @@ public class ExtentReport {
                 + "<br />"
                 + "Host:     " + scheme + "://" + host
                 + "<br />"
-                + "Path:     " + path + "/" + url.getQuery()
+                + "Path:     " + path
                 + "<br/>"
                 + "<br/>"
-                + getFormattedJson(jsonPostData)
+                + jsonPostData
                 + "<br/>"
                 + "<br/>"
                 + "</pre>");

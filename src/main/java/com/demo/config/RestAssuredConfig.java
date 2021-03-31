@@ -1,77 +1,92 @@
 package com.demo.config;
 
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.jayway.restassured.builder.RequestSpecBuilder;
 import com.jayway.restassured.builder.ResponseSpecBuilder;
 import com.jayway.restassured.http.ContentType;
+import com.jayway.restassured.response.Header;
 import com.jayway.restassured.response.Response;
 import com.jayway.restassured.specification.RequestSpecification;
 import com.jayway.restassured.specification.ResponseSpecification;
-import org.json.JSONObject;
-import org.testng.annotations.BeforeClass;
-import org.testng.annotations.Parameters;
+import org.apache.http.client.utils.URIBuilder;
 
-import static com.demo.properties.Environments.HOST;
-import static com.demo.properties.TestData.*;
-import static com.demo.utilities.FileUtility.createLogFile;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.net.URI;
+import java.net.URISyntaxException;
+import java.util.List;
 
-public class RestAssuredConfig extends BasicTestConfig {
+import static com.demo.properties.FilePaths.report_json_folder;
+import static com.demo.properties.TestData.testName;
 
-    public static RequestSpecBuilder builder;
-    public static Response           response;
-    public static RequestSpecification requestSpecification;
+public class RestAssuredConfig {
+
+    private RequestSpecBuilder builder = new RequestSpecBuilder();
+    public Gson gson = new GsonBuilder().setLenient().setPrettyPrinting().create();
+    public RequestSpecification requestSpecification;
+
+    public static List<Header> responseHeaders;
+    public static String responseBody;
+    public static int statusCode;
 
 
     private static final ResponseSpecification responseSpec = new ResponseSpecBuilder().build();
 
 
-    public static RequestSpecification requestSpecification(JSONObject requestBody) {
+    public RequestSpecification requestSpecification(String url, String requestBody) {
         if (requestBody != null) {
-            builder = new RequestSpecBuilder();
-            builder.addHeader("x-api-key", API_KEY);
+            builder.setBaseUri(url);
             builder.setContentType(ContentType.JSON);
             builder.setBody(requestBody);
         } else {
-            builder = new RequestSpecBuilder();
-            builder.addHeader("x-api-key", API_KEY);
+            builder.setBaseUri(url);
             builder.setContentType(ContentType.JSON);
         }
+         requestSpecification = builder.build();
         return requestSpecification;
     }
 
 
-    //***   Take environment parameter from XML file
-    @BeforeClass
-    @Parameters("environment")
-    public static void setEnvironmentHostUserPass(String environment) {
-        env = environment;
-        if (environment.equalsIgnoreCase("fly")) {
-            HOST = "api.flypaythis.com";
-        } else if (environment.equalsIgnoreCase("test")) {
-            HOST = "api.mailslurp.com";
-            USER = "sandboxqa11@gmail.com";
-            MAIL = "automation";
-        }
+    public String getURL(String scheme, String host, String path) throws URISyntaxException {
+        scheme = scheme;
+        host = host;
+        path = path;
+        URI getUrl = new URIBuilder()
+                .setScheme(scheme)
+                .setHost(host)
+                .setPath(path)
+                .build();
+
+        return getUrl.toString();
     }
 
 
     //***   Get response details
-    public static void getResponseInfo(Response response) {
-        responseHeaders = response.getHeaders().asList();
-        responseBody    = response.getBody().asString();
-        responseCode    = response.getStatusCode();
-        formattedJson   = response.toString();
-        createLogFile();
+    public List<Header> getResponseHeaders(Response response) throws IOException {
+        return responseHeaders = response.getHeaders().asList();
     }
 
 
-    public static JSONObject getJsonObjectBody(Response response) {
-        JSONObject jsonObject = new JSONObject(response.body().prettyPrint());
-        return jsonObject;
+    public String getJsonResponseBody(Response response) {
+        responseBody = gson.toJson(response.asString());
+        return responseBody;
     }
 
 
-    public static int getStatusCode() {
-        int status_code = response.getStatusCode();
-        return status_code;
+    public int getStatusCode(Response response) {
+        statusCode = response.getStatusCode();
+        return statusCode;
+    }
+
+
+    //***   Print JSON response into created file
+    public void createLogFile(String response) throws IOException {
+        File file = new File(report_json_folder + testName + ".json");
+        FileWriter fileWriter = new FileWriter(file);
+        fileWriter.write(response);
+        fileWriter.flush();
+        fileWriter.close();
     }
 }

@@ -1,33 +1,11 @@
 package com.demo.config;
 
-import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
-import com.aventstack.extentreports.MediaEntityBuilder;
-import com.aventstack.extentreports.Status;
-import org.apache.commons.io.FileUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestContext;
-import org.testng.ITestListener;
 import org.testng.ITestResult;
-import org.testng.annotations.AfterTest;
 import org.testng.internal.IResultListener;
-
-import java.io.File;
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.Locale;
-
-import static com.demo.config.BasicTestConfig.driver;
-import static com.demo.properties.FilePaths.report_json_folder;
-import static com.demo.properties.FilePaths.screenshots_actual_folder;
-import static com.demo.properties.FilePaths.screenshots_failed_folder;
-import static com.demo.utilities.FileUtility.readJsonResponseFile;
-import static com.demo.config.ExtentReport.*;
 
 public class TestNGListener  implements IResultListener {
 

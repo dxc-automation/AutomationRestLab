@@ -23,38 +23,109 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f00f1476-33d1-457d-8a05-897dee283339" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/EPS.ipr" beforeDir="false" afterPath="$PROJECT_DIR$/EPS.ipr" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/EPS.iws" beforeDir="false" afterPath="$PROJECT_DIR$/EPS.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/win/run.bat" beforeDir="false" afterPath="$PROJECT_DIR$/bin/win/run.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/JSON/Create_New_Domain.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/report/JSON/Register_New_User.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/JSON/Register_New_User.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/JSON/API_Bootstrap.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/JSON/Register_New_User.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/report/JSON/User_Login.json" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/report/TestReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/TestReport.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/config/BasicTestConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/config/BasicTestConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/config/ExtentReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/config/ExtentReport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/config/RestAssuredConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/config/RestAssuredConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/config/TestNGListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/config/TestNGListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/properties/Environments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/properties/Environments.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/properties/FilePaths.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/properties/FilePaths.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/properties/TestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/properties/TestData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/user/Bootstrap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/user/Bootstrap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/user/ChangeUserInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/user/ChangeUserInfo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/user/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/user/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/user/RegisterNewUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/user/RegisterNewUser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/xml_files/TestCase_01_UserRegistration.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/xml_files/TestCase_01_UserRegistration.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/xml_files/TestCase_02_UserLogin.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/xml_files/TestCase_02_UserLogin.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/user/Bootstrap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/user/ChangeUserInfo.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/user/Login.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/api/user/RegisterNewUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_01_UserRegistration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_02_UserLogin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/utilities/FileUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/utilities/FileUtility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/AlertHandling.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/Assertions.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/Basic.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/ElementScreenshot.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/GetAllPageLinks.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/GetElementText.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/HandleTable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/ImageCompare.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/PageScroll.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/SpecializedScreenRecorder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/VideoRecord.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/WebDriverUtils.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/utilities/user_interface/WriteText.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/xml_files/TestCase_01_UserRegistration.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/xml_files/TestCase_02_UserLogin.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Demo.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/archive-tmp/Demo.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/archive-tmp/Demo.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/user/Login.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/user/Login.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/config/BasicTestConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/config/BasicTestConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/config/ConsoleRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/config/ConsoleRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/config/ExtentReport.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/config/ExtentReport.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/config/RestAssuredConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/config/RestAssuredConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/config/TestNGListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/config/TestNGListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/properties/Environments.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/properties/Environments.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/properties/FilePaths.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/properties/FilePaths.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/properties/TestData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/properties/TestData.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/user/Bootstrap.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/user/ChangeUserInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/user/Login.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/api/user/RegisterNewUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/tests/TestCase_01_UserRegistration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/tests/TestCase_02_UserLogin.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/FileUtility.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/utilities/FileUtility.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/Generators.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/utilities/Generators.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/AlertHandling.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/Assertions$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/Assertions.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/Basic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/ElementScreenshot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/GetAllPageLinks.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/GetElementText.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/HandleTable.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/ImageCompare.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/PageScroll.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/SpecializedScreenRecorder.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/VideoRecord.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/WebDriverUtils.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/user_interface/WriteText.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/web_services/HttpURLConnectionConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/utilities/web_services/HttpURLConnectionConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/utilities/web_services/MyStringResponseHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/utilities/web_services/MyStringResponseHandler.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/Demo Test Suite/TC_01_Domain.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/Demo Test Suite/TC_01_Domain.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/Demo Test Suite/TC_01_Domain.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/Demo Test Suite/TC_01_Domain.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/emailable-report.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/junitreports/TEST-com.demo.tests.TestCase_01_UserRegistration.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/classes.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/main.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/methods-alphabetical.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/methods-not-run.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/methods-not-run.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/methods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/testng.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/testng.xml.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/toc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/old/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-output/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-output/testng-results.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/Demo Test Suite/TC_01_Domain.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/Demo Test Suite/TC_01_Domain.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/Demo Test Suite/testng-failed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/bullet_point.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/collapseall.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/emailable-report.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/failed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/jquery-3.4.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/junitreports/TEST-com.demo.tests.TestCase_02_UserLogin.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/navigator-bullet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/TC_01_Domain.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/classes.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/groups.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/methods-alphabetical.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/methods-not-run.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/methods.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/reporter-output.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/testng.xml.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/old/Demo Test Suite/toc.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/old/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/passed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/skipped.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/testng-failed.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/testng-reports.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/testng-reports.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/testng-results.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-output/testng.css" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,15 +171,16 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2020.2.2\plugins\maven\lib\maven3" />
+        <option name="mavenHome" value="$PROJECT_DIR$/../../apache-maven-3.6.3" />
         <option name="usePluginRegistry" value="true" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
       <MavenImportingSettings>
+        <option name="downloadAnnotationsAutomatically" value="true" />
         <option name="downloadDocsAutomatically" value="true" />
         <option name="downloadSourcesAutomatically" value="true" />
-        <option name="jdkForImporter" value="1.8" />
+        <option name="jdkForImporter" value="#JAVA_HOME" />
       </MavenImportingSettings>
     </option>
   </component>
@@ -122,17 +194,18 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1543942684289" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources/xml_files" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15332031" />
     <property name="project.structure.side.proportion" value="0.4544406" />
-    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.importing" />
+    <property name="settings.editor.selected.configurable" value="reference.settings.project.maven.repository.indices" />
   </component>
   <component name="RecentsManager">
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
@@ -255,7 +328,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="TestNG.TestCase_01">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="recording" autostart="false" />
@@ -290,6 +363,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestCase_01" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="JAVA_FRAMEWORK" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.demo.tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <extension name="recording" autostart="true" />
+      <option name="PACKAGE_NAME" value="com.demo.tests" />
+      <option name="MAIN_CLASS_NAME" value="com.demo.tests.TestCase_01" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="TestNG">
       <extension name="recording" autostart="true" />
       <option name="TEST_OBJECT" value="CLASS" />
@@ -302,6 +394,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TestCase_01" />
         <item itemvalue="TestNG.ID_04_Menu" />
       </list>
     </recent_temporary>
@@ -425,55 +518,10 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
-  <component name="WindowStateProjectService">
-    <state x="512" y="234" key="#Notifications" timestamp="1600781680149">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="512" y="234" key="#Notifications/0.0.1536.824@0.0.1536.824" timestamp="1600781680149" />
-    <state x="249" y="0" key="#Project_Structure" timestamp="1600781738113">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1600781738113" />
-    <state x="499" y="192" key="#com.intellij.ide.util.PackageChooserDialog" timestamp="1600791864645">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="499" y="192" key="#com.intellij.ide.util.PackageChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1600791864645" />
-    <state x="551" y="307" width="433" height="216" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1600791867649">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="551" y="307" width="433" height="216" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1600791867649" />
-    <state x="499" y="158" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1598474784230">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="499" y="158" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1598474784230" />
-    <state x="549" y="167" key="FileChooserDialogImpl" timestamp="1598428549756">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1598428549756" />
-    <state x="349" y="155" key="IDE.errors.dialog" timestamp="1600938789084">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="349" y="155" key="IDE.errors.dialog/0.0.1536.824@0.0.1536.824" timestamp="1600938789084" />
-    <state x="299" y="67" key="Maven.ArtifactSearchDialog" timestamp="1598383388824">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="299" y="67" key="Maven.ArtifactSearchDialog/0.0.1536.824@0.0.1536.824" timestamp="1598383388824" />
-    <state x="270" y="56" key="SettingsEditor" timestamp="1600706451542">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="270" y="56" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1600706451542" />
-    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1600952020810">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1600952020810" />
-    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog" timestamp="1600938898233">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="93" y="93" width="1350" height="638" key="com.intellij.history.integration.ui.views.SelectionHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1600938898233" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1598461793485">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1598461793485" />
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
