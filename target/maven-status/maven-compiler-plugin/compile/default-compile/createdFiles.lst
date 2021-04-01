@@ -1,5 +1,6 @@
 com\demo\config\TestNGListener.class
 com\demo\utilities\web_services\HttpURLConnectionConfig.class
+com\demo\scripts\GetCollectedRequests.class
 com\demo\utilities\FileUtility.class
 com\demo\utilities\web_services\MyStringResponseHandler.class
 com\demo\scripts\CreateNewBasket.class

@@ -9,6 +9,7 @@ import com.aventstack.extentreports.reporter.configuration.Theme;
 
 import java.net.InetAddress;
 import java.net.UnknownHostException;
+import java.util.Locale;
 
 import static com.demo.properties.FilePaths.report_html_file;
 
@@ -23,8 +24,9 @@ import static com.demo.properties.FilePaths.report_html_file;
 
 public class ExtentReport {
 
-    public static ExtentTest    test;
-    public static ExtentReports extent;
+    public static  ExtentTest    test;
+    public static  ExtentReports extent;
+    private String jsonPostData;
     private static ExtentSparkReporter htmlReporter;
     private static ExtentKlovReporter  kiovReporter;
 
@@ -52,6 +54,9 @@ public class ExtentReport {
 
     private static ExtentSparkReporter getHtmlReporter() {
         htmlReporter = new ExtentSparkReporter(report_html_file);
+        htmlReporter.config().setReportName("Automation Test Report");
+        htmlReporter.config().setDocumentTitle("Automation Report");
+        htmlReporter.config().setTimelineEnabled(true);
         htmlReporter.config().setTheme(Theme.DARK);
         htmlReporter.config().setEncoding("UTF-8");
         return htmlReporter;
@@ -62,7 +67,7 @@ public class ExtentReport {
     public static void startTestReport(String testName, String testDescription, String testAuthor, String functionality) throws Exception {
         extent = GetExtent();
         test   = extent.createTest(
-                "<b>" + testName + "</b>",
+                "<b><i class='fa fa-diamond'></i> " + testName + "</b>",
                 "<pre>"
                         + "<center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center>"
                         + "<p align=justify>"
@@ -77,12 +82,15 @@ public class ExtentReport {
     }
 
 
-    public static void generateRequestReport(String scheme, String host, String path, String jsonPostData) {
+    public void generateRequestReport(String scheme, String host, String path, String requestMethod, String jsonPostData) {
+        this.jsonPostData = jsonPostData;
         //***   Print request details
         test.info("<pre>"
                 + "<br/>"
                 + "<center><b>* * * * * * * *    R E Q U E S T    * * * * * * * *</b></center>"
                 + "<br />"
+                + "<br />"
+                + "Method    " + requestMethod.toUpperCase(Locale.ROOT)
                 + "<br />"
                 + "Host:     " + scheme + "://" + host
                 + "<br />"

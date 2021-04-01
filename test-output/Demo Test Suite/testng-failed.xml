@@ -10,7 +10,7 @@
         <methods>
           <include name="endReport"/>
           <include name="cleanReportData"/>
-          <include name="add_new_basket" invocation-numbers="0"/>
+          <include name="get_collected_requests" invocation-numbers="0"/>
           <include name="generateReport"/>
         </methods>
       </class> <!-- com.demo.tests.TestCase_01 -->

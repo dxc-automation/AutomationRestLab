@@ -31,20 +31,22 @@ public class RestAssuredConfig {
     public static String responseBody;
     public static int statusCode;
 
+    private String requestBody;
+    private String authorizationHeader;
+
 
     private static final ResponseSpecification responseSpec = new ResponseSpecBuilder().build();
 
 
-    public RequestSpecification requestSpecification(String url, String requestBody) {
-        if (requestBody != null) {
+    public RequestSpecification requestSpecification(String url, String requestBody, String authorizationHeader) {
+        this.requestBody = requestBody;
+        this.authorizationHeader = authorizationHeader;
+
             builder.setBaseUri(url);
+            builder.addHeader("Authorization", authorizationHeader);
             builder.setContentType(ContentType.JSON);
             builder.setBody(requestBody);
-        } else {
-            builder.setBaseUri(url);
-            builder.setContentType(ContentType.JSON);
-        }
-         requestSpecification = builder.build();
+            requestSpecification = builder.build();
         return requestSpecification;
     }
 

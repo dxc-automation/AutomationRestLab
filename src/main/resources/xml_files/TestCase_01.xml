@@ -12,6 +12,7 @@
             <class name="com.demo.tests.TestCase_01">
                 <methods>
                     <include name="add_new_basket"/>
+                    <include name="get_collected_requests"/>
                 </methods>
             </class>
         </classes>

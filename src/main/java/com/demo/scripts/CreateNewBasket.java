@@ -1,5 +1,6 @@
 package com.demo.scripts;
 
+import com.demo.config.ExtentReport;
 import com.demo.config.RestAssuredConfig;
 import com.jayway.restassured.response.Response;
 import com.jayway.restassured.response.ResponseBody;
@@ -28,7 +29,7 @@ public class CreateNewBasket extends RestAssuredConfig {
     //*** Send request and receive response method
     public void newBasket(String basketName, int basketCapacity) throws Exception {
         //***   Print test name and test description
-        testAuthor      ="Pavel Popov";
+        testAuthor      = "Pavel Popov";
         functionality   = "Baskets";
         testName        = "Create New Basket";
         testDescription = "The purpose of this test is to verify that the login functionality is working as expected" +
@@ -55,10 +56,11 @@ public class CreateNewBasket extends RestAssuredConfig {
         jsonPostData.put("capacity",      basketCapacity);
 
         //***   Call print report method from ExtentReport.class
-        generateRequestReport(scheme, host, path, gson.toJson(jsonPostData));
+        ExtentReport extentReport = new ExtentReport();
+        extentReport.generateRequestReport(scheme, host, path, gson.toJson(jsonPostData));
 
 
-        response = given(requestSpecification(url, jsonPostData.toJSONString()))
+        response = given(requestSpecification(url, jsonPostData.toJSONString(), ""))
                 .log().all()
                 .body(jsonPostData)
                 .when()
@@ -71,7 +73,7 @@ public class CreateNewBasket extends RestAssuredConfig {
         //***   Get parameter value from response
         try {
             ResponseBody body = response.getBody();
-            accessToken = body.jsonPath().getJsonObject("accessToken");
+            accessToken = body.jsonPath().getJsonObject("token");
         test.info("<pre>"
                     + "<br/>"
                     + "<center><b>* * * * * * * *    I N F O R M A T I O N    * * * * * * * *</b></center>"
