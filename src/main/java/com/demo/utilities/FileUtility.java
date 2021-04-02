@@ -48,17 +48,4 @@ public class FileUtility extends BasicTestConfig {
         }
         return null;
     }
-
-
-    public static String getFormattedJson(String responseBody) {
-        try {
-            Gson gson = new GsonBuilder().setLenient().setPrettyPrinting().create();
-            String formattedJson = gson.toJson(responseBody);
-            return formattedJson;
-
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        return null;
-    }
 }

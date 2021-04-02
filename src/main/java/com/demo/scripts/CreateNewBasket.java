@@ -2,7 +2,6 @@ package com.demo.scripts;
 
 import com.demo.config.ExtentReport;
 import com.demo.config.RestAssuredConfig;
-import com.jayway.restassured.response.Response;
 import com.jayway.restassured.response.ResponseBody;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -10,7 +9,8 @@ import org.json.simple.JSONObject;
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 
-import static com.demo.config.ExtentReport.*;
+import static com.demo.config.ExtentReport.startTestReport;
+import static com.demo.config.ExtentReport.test;
 import static com.demo.properties.Environments.HOST;
 import static com.demo.properties.Environments.getCreateNewBasketPath;
 import static com.demo.properties.TestData.*;
@@ -19,12 +19,6 @@ import static com.jayway.restassured.RestAssured.given;
 @Listeners(com.demo.config.TestNGListener.class)
 public class CreateNewBasket extends RestAssuredConfig {
     static final Logger LOG = LogManager.getLogger(CreateNewBasket.class);
-
-    private String scheme;
-    private String host;
-    private String path;
-    private Response response;
-
 
     //*** Send request and receive response method
     public void newBasket(String basketName, int basketCapacity) throws Exception {
@@ -44,7 +38,7 @@ public class CreateNewBasket extends RestAssuredConfig {
         scheme = "https";
         host   = HOST;
         path   = getCreateNewBasketPath(basketName);
-        url = getURL(scheme, host, path);
+        url    = getURL(scheme, host, path);
 
 
         //***   Request Body
@@ -57,8 +51,7 @@ public class CreateNewBasket extends RestAssuredConfig {
 
         //***   Call print report method from ExtentReport.class
         ExtentReport extentReport = new ExtentReport();
-        extentReport.generateRequestReport(scheme, host, path, gson.toJson(jsonPostData));
-
+        extentReport.generateRequestReport(scheme, host, path, "post", gson.toJson(jsonPostData));
 
         response = given(requestSpecification(url, jsonPostData.toJSONString(), ""))
                 .log().all()
@@ -69,6 +62,7 @@ public class CreateNewBasket extends RestAssuredConfig {
                 .log().all()
                 .extract()
                 .response();
+
 
         //***   Get parameter value from response
         try {
@@ -88,7 +82,6 @@ public class CreateNewBasket extends RestAssuredConfig {
         }
         createLogFile(response.asString());
         responseHeaders = getResponseHeaders(response);
-        responseBody    = getJsonResponseBody(response);
         statusCode      = getStatusCode(response);
 
         Assert.assertTrue(statusCode > 199 && statusCode < 300);

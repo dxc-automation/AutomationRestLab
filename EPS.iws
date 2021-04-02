@@ -26,35 +26,27 @@
       <change beforePath="$PROJECT_DIR$/EPS.iws" beforeDir="false" afterPath="$PROJECT_DIR$/EPS.iws" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/JSON/Create New Basket.json" beforeDir="false" afterPath="$PROJECT_DIR$/report/JSON/Create New Basket.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/report/TestReport.html" beforeDir="false" afterPath="$PROJECT_DIR$/report/TestReport.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/config/ExtentReport.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/config/ExtentReport.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/config/BasicTestConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/config/BasicTestConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/config/RestAssuredConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/config/RestAssuredConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/properties/Environments.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/properties/Environments.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/properties/FilePaths.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/properties/FilePaths.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/properties/TestData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/properties/TestData.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/CreateNewBasket.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/CreateNewBasket.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_01.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/tests/TestCase_01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/xml_files/TestCase_01.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/xml_files/TestCase_01.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/scripts/GetCollectedRequests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/scripts/GetCollectedRequests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/demo/utilities/FileUtility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/demo/utilities/FileUtility.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/Demo.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/Demo.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/archive-tmp/Demo.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/archive-tmp/Demo.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/demo/config/ExtentReport.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/config/ExtentReport.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/properties/FilePaths.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/properties/FilePaths.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/properties/TestData.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/properties/TestData.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/CreateNewBasket.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/scripts/CreateNewBasket.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/tests/TestCase_01.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/tests/TestCase_01.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/demo/scripts/GetCollectedRequests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/demo/scripts/GetCollectedRequests.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/Demo Test Suite/TC_01_Domain.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Demo Test Suite/TC_01_Domain.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/Demo Test Suite/TC_01_Domain.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Demo Test Suite/TC_01_Domain.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/Demo Test Suite/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/Demo Test Suite/testng-failed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/emailable-report.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/junitreports/TEST-com.demo.tests.TestCase_01.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/junitreports/TEST-com.demo.tests.TestCase_01.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Demo Test Suite/classes.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Demo Test Suite/classes.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/old/Demo Test Suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Demo Test Suite/methods-alphabetical.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/old/Demo Test Suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Demo Test Suite/methods.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/old/Demo Test Suite/testng.xml.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Demo Test Suite/testng.xml.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/old/Demo Test Suite/toc.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/Demo Test Suite/toc.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/old/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/old/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test-output/testng-failed.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-failed.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test-output/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/test-output/testng-results.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

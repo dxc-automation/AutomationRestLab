@@ -2,7 +2,6 @@ package com.demo.scripts;
 
 import com.demo.config.ExtentReport;
 import com.demo.config.RestAssuredConfig;
-import com.jayway.restassured.response.Response;
 import com.jayway.restassured.response.ResponseBody;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -19,12 +18,6 @@ import static com.jayway.restassured.RestAssured.given;
 @Listeners(com.demo.config.TestNGListener.class)
 public class GetCollectedRequests extends RestAssuredConfig {
     static final Logger LOG = LogManager.getLogger(GetCollectedRequests.class);
-
-    private String scheme;
-    private String host;
-    private String path;
-    private Response response;
-
 
     //*** Send request and receive response method
     public void getCollectedRequests(String basketName) throws Exception {
@@ -48,7 +41,7 @@ public class GetCollectedRequests extends RestAssuredConfig {
 
         //***   Call print report method from ExtentReport.class
         ExtentReport extentReport = new ExtentReport();
-        extentReport.generateRequestReport(scheme, host, path, "get");
+        extentReport.generateRequestReport(scheme, host, path, "get", "");
 
         response = given(requestSpecification(url, "", accessToken))
                 .log().all()
@@ -76,7 +69,6 @@ public class GetCollectedRequests extends RestAssuredConfig {
         }
         createLogFile(response.asString());
         responseHeaders = getResponseHeaders(response);
-        responseBody    = getJsonResponseBody(response);
         statusCode      = getStatusCode(response);
 
         Assert.assertTrue(statusCode > 199 && statusCode < 300);

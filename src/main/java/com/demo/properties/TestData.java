@@ -27,6 +27,12 @@ public class TestData {
     public static String functionality;
 
 
+    //  * * * *    ENDPOINT
+    public static String scheme;
+    public static String host;
+    public static String path;
+
+
     //  * * * *    RESPONSE
     public static String basketName;
     public static String accessToken;

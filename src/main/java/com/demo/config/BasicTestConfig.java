@@ -63,7 +63,7 @@ public class BasicTestConfig extends RestAssuredConfig {
                         + "<br/>"
                         + "<br/>"
                         + "<br/>"
-                        + responseBody
+                        + response.body().prettyPrint()
                         + "<br/>"
                         + "<br/>"
                         + "</pre>");
@@ -84,7 +84,7 @@ public class BasicTestConfig extends RestAssuredConfig {
                             + "<br />"
                             + "Response Code  : " + statusCode
                             + "<br />"
-                            + "Error Message  : " + responseBody
+                            + "Error Message  : " + response.body().prettyPrint()
                             + "<br />"
                             + "<br />"
                             + responseHeaders

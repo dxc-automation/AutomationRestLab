@@ -28,7 +28,7 @@ public class RestAssuredConfig {
     public RequestSpecification requestSpecification;
 
     public static List<Header> responseHeaders;
-    public static String responseBody;
+    public static Response response;
     public static int statusCode;
 
     private String requestBody;
@@ -39,14 +39,18 @@ public class RestAssuredConfig {
 
 
     public RequestSpecification requestSpecification(String url, String requestBody, String authorizationHeader) {
-        this.requestBody = requestBody;
-        this.authorizationHeader = authorizationHeader;
-
+        if (requestBody != null) {
             builder.setBaseUri(url);
             builder.addHeader("Authorization", authorizationHeader);
             builder.setContentType(ContentType.JSON);
             builder.setBody(requestBody);
             requestSpecification = builder.build();
+        } else {
+            builder.setBaseUri(url);
+            builder.addHeader("Authorization", authorizationHeader);
+            builder.setContentType(ContentType.JSON);
+            requestSpecification = builder.build();
+        }
         return requestSpecification;
     }
 
@@ -68,12 +72,6 @@ public class RestAssuredConfig {
     //***   Get response details
     public List<Header> getResponseHeaders(Response response) throws IOException {
         return responseHeaders = response.getHeaders().asList();
-    }
-
-
-    public String getJsonResponseBody(Response response) {
-        responseBody = gson.toJson(response.asString());
-        return responseBody;
     }
 
 
